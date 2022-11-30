@@ -1,0 +1,103 @@
+
+.js__bg1{
+    background-color: rgb(34, 34, 34);
+}
+.js__bg2{
+    background-color: rgba(242, 244, 247, 1);
+}
+#js__header{
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 64px;
+    a{
+        h1{
+        font-size: 64px;
+        color: rgba(247, 223, 30, 1);
+        transition: all 1s;
+        }
+        h1:hover{
+            text-shadow: 1px 1px 15px rgb(0, 0, 0);
+        }
+    }
+}
+#js__main{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 64px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-gap: 64px;
+    h2{
+        font-size: 42px;
+        color: rgb(0, 0, 0);
+    }
+    .clases1a16{
+        font-family: 'Roboto', sans-serif;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 32px;
+        .clases{
+            @include flex(column, nowrap, space-between, stretch, 32px);
+            padding: 32px 52px;
+            max-width: 380px;
+            min-height: 480px;
+            background-color: rgba(0, 0, 0, 0.9);
+            transition: all .8s;
+            .clases__title{
+                font-size: 32px;
+                color: rgba(247, 223, 30, 1);
+            }
+            .clases__descrip{
+                @include flex(column, nowrap, space-between, stretch, 32px);
+                font-size: 20px;
+                color: white;
+            }
+            .clases__btn{
+                align-self: flex-end;
+                text-align: center;
+                .clases__link{
+                    transition: all .3s;
+                    background-color:  rgba(247, 223, 30, 1);
+                    padding: 8px 16px;
+                    color: black;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+            .clases__link:hover{
+                border: solid 2px rgba(247, 223, 30, 1);
+                background-color:  black;
+                color: rgba(247, 223, 30, 1);
+            }
+        }
+        .clases:hover{
+            background-color: rgb(0, 0, 0);
+        }
+    }
+}
+#js__footer{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 64px;
+    @include flex(row, nowrap, space-between, stretch, 0);
+    .footer__imgs{
+        @include flex(column, nowrap, space-between, center, 32px);
+        .img1{
+            width: 60px;
+        }
+        .img2{
+            width: 240px;
+        }
+    }
+    .footer__descrip{
+        text-align: center;
+        padding: 16px;
+        max-width: 420px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        color: white;
+    }
+}
+

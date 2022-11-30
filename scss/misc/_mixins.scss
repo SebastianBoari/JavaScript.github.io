@@ -1,0 +1,16 @@
+@mixin flex($dir, $wrap, $jc, $ai, $gap){
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+}
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+}
+@mixin max-sizes($max-width, $max-height){
+    max-width: $max-width;
+    max-height: $max-height;
+}
