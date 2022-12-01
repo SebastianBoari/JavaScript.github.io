@@ -1,0 +1,24 @@
+footer{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 64px;
+    @include flex(row, nowrap, space-between, stretch, 0);
+    .footer__imgs{
+        @include flex(column, nowrap, space-between, center, 32px);
+        .img1{
+            width: 60px;
+        }
+        .img2{
+            width: 240px;
+        }
+    }
+    .footer__descrip{
+        text-align: center;
+        padding: 16px;
+        max-width: 420px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        color: white;
+    }
+}

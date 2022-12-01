@@ -1,0 +1,17 @@
+header{
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 64px;
+    a{
+        h1{
+        font-size: 64px;
+        color: rgba(247, 223, 30, 1);
+        transition: all 1s;
+        }
+        h1:hover{
+            text-shadow: 1px 1px 15px rgb(0, 0, 0);
+        }
+    }
+}

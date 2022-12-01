@@ -1,95 +1,57 @@
-#c1__body{
-    background-color: rgb(34, 33, 33);
-}
-.c1__header{
+#header__clases{
+    max-width: 1400px;
     margin: 0 auto;
-    max-width: 1200px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    padding: 128px;
-    background-color: rgb(34, 33, 33);
-    h1{
-        font-size: 96px;
-        font-weight: bolder;
-        color: transparent;
-        -webkit-text-stroke: 3px orangered;
-        transition: all 1s;
-    }
-    h1:hover{
-        text-shadow: 1px 1px 15px rgba(0,0,0,1);
-        color: orangered;
+    .clases__nav{
+        @include flex(column, nowrap, space-between, center, 32px);
+        .nav__logo{
+            .logo__img{
+                width: 120px;
+            }
+        }
+        .nav__list{
+            @include flex(row, nowrap, space-between, center, 32px);
+            list-style-type: none;
+            .nav__item{
+                .nav__link{
+                    font-family: 'Roboto' sans-serif;
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: rgba(247, 223, 30, 1);
+                    text-decoration: none;
+                    transition: all .3s;
+                }
+                .nav__link:hover{
+                    color: white;
+                }
+            }
+        }
     }
 }
-.bg-blur{
-    -webkit-box-shadow: 0px 4px 48px 17px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 4px 48px 17px rgba(0,0,0,1);
-    box-shadow: 0px 4px 48px 17px rgba(0,0,0,1);
-    border-radius: 8px;
-    background-image: linear-gradient( 109.6deg,  rgba(255,174,0,1) 11.2%, rgba(255,0,0,1) 100.2% );
-    margin: 0 auto;
-    max-width: 1200px;
-    .c1__main{
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        gap: 84px;
-        padding: 64px;
-        h2{
-            font-size: 64px;
-            font-weight: bold;
-            color: black;
-            border-bottom: dotted 3px rgb(34, 33, 33);
+#clases__main{
+    .clases__section{
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 64px 0 0;
+        .clases__title{
             padding: 32px;
+            background-color: rgb(34, 34, 34);
+            font-size: 32px;
+            color: rgba(247, 223, 30, 1);
         }
-        ol{
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            row-gap: 64px;
-            list-style: none;
-            div{
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: space-between;
-                border: dotted 3px rgb(0, 0, 0);
-                border-radius: 5px;
-                padding: 32px;
-                transition: all .3s;
-                li{
-                    font-size: 16px;
-                    font-weight: bold;
-                    color: black;
-                }
-                input{
-                    width: 16px;
-                    height: 16px;
+        .clases__article{
+            padding: 64px 0;
+            .consignas__list{
+                @include flex(column, nowrap, space-between, stretch, 64px);
+                list-style-type: none;
+                padding: 64px;
+                background-color: rgb(34, 34, 34);
+                .consignas__item{
+                    padding: 32px;
+                    border: solid 3px rgba(247, 223, 30, 1);
+                    color: white;
+                    font-size: 20px;
                 }
             }
-            div:hover{
-                background-color: orange;
-            }
         }
-    }
-}
-.c1__footer{
-    margin: 0 auto;
-    max-width: 1200px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    padding: 128px;
-    background-image: rgb(34, 33, 33);
-    h3{
-        font-size: 84px;
-        font-weight: bold;
-        color: transparent;
-        -webkit-text-stroke: 2px orangered;
-        transition: all 1s;
-    }
-    h3:hover{
-        color: orangered;
     }
 }
