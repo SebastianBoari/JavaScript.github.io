@@ -180,3 +180,67 @@ header {
         border: solid 3px #f7df1e;
         color: white;
         font-size: 20px; }
+
+#clases__main .clases__anotaciones {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 64px 0;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-row-gap: 64px; }
+  #clases__main .clases__anotaciones .clases__title {
+    padding: 32px;
+    background-color: #222222;
+    font-size: 32px;
+    color: #f7df1e; }
+  #clases__main .clases__anotaciones .article__anotaciones {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 64px;
+    grid-row-gap: 64px;
+    background-color: #222222;
+    padding: 64px; }
+    #clases__main .clases__anotaciones .article__anotaciones .anotaciones__temario {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 32px;
+      border: solid 3px #f7df1e;
+      padding: 64px; }
+      #clases__main .clases__anotaciones .article__anotaciones .anotaciones__temario .temario__title {
+        color: white;
+        font-size: 24px;
+        font-weight: 600; }
+      #clases__main .clases__anotaciones .article__anotaciones .anotaciones__temario .temario__list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 46px;
+        list-style-type: none; }
+        #clases__main .clases__anotaciones .article__anotaciones .anotaciones__temario .temario__list .temario__item {
+          color: white;
+          font-size: 22px;
+          font-weight: 400; }
+    #clases__main .clases__anotaciones .article__anotaciones .clase__tema {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 32px;
+      border: solid 3px white;
+      padding: 64px 16px; }
+      #clases__main .clases__anotaciones .article__anotaciones .clase__tema h4 {
+        color: white;
+        font-size: 20px;
+        font-weight: 400; }
+      #clases__main .clases__anotaciones .article__anotaciones .clase__tema p {
+        color: white;
+        font-size: 16px;
+        font-weight: 400; }
+      #clases__main .clases__anotaciones .article__anotaciones .clase__tema img {
+        width: 540px; }

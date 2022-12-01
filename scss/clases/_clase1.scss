@@ -55,3 +55,67 @@
         }
     }
 }
+#clases__main{
+    .clases__anotaciones{
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 64px 0;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-row-gap: 64px;
+        .clases__title{
+            padding: 32px;
+            background-color: rgb(34, 34, 34);
+            font-size: 32px;
+            color: rgba(247, 223, 30, 1);
+        }
+        .article__anotaciones{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 64px;
+            grid-row-gap: 64px;
+            background-color: rgb(34, 34, 34);
+            padding: 64px;
+            .anotaciones__temario{
+                @include flex(column, nowrap, space-between, stretch, 32px);
+                border: solid 3px rgba(247, 223, 30, 1);
+                padding: 64px;
+                .temario__title{
+                    color: white;
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+                .temario__list{
+                    @include flex(column, nowrap, space-between, stretch, 46px);
+                    list-style-type: none;
+                    .temario__item{
+                        color: white;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+
+                }
+            }
+            .clase__tema{
+                @include flex(column, nowrap, space-between, stretch, 32px);
+                border: solid 3px white;
+                padding: 64px 16px;
+                h4{
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+                p{
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                img{
+                    width: 540px;
+                }
+            }
+        }
+
+    }
+}
+
