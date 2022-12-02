@@ -210,8 +210,8 @@ header {
       border: solid 3px #f7df1e;
       padding: 64px; }
       #clases__main .clases__anotaciones .article__anotaciones .anotaciones__temario .temario__title {
-        color: white;
-        font-size: 24px;
+        color: #f7df1e;
+        font-size: 32px;
         font-weight: 600; }
       #clases__main .clases__anotaciones .article__anotaciones .anotaciones__temario .temario__list {
         display: flex;
@@ -235,12 +235,24 @@ header {
       border: solid 3px white;
       padding: 64px 16px; }
       #clases__main .clases__anotaciones .article__anotaciones .clase__tema h4 {
-        color: white;
-        font-size: 20px;
-        font-weight: 400; }
+        color: #f7df1e;
+        font-size: 22px;
+        font-weight: 600; }
       #clases__main .clases__anotaciones .article__anotaciones .clase__tema p {
         color: white;
         font-size: 16px;
         font-weight: 400; }
+        #clases__main .clases__anotaciones .article__anotaciones .clase__tema p span {
+          font-weight: 600;
+          font-size: 18px;
+          color: #f7df1e; }
       #clases__main .clases__anotaciones .article__anotaciones .clase__tema img {
         width: 540px; }
+
+.div--column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 32px; }
