@@ -180,6 +180,18 @@ header {
         border: solid 3px #f7df1e;
         color: white;
         font-size: 20px; }
+        #clases__main .clases__section .clases__article .consignas__list .consignas__item ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: stretch;
+          gap: 8px;
+          padding: 32px 0; }
+        #clases__main .clases__section .clases__article .consignas__list .consignas__item span {
+          color: #f7df1e;
+          font-size: 18px; }
 
 #clases__main .clases__anotaciones {
   max-width: 1400px;

@@ -6,15 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="icon" href="../img/jslogo.webp">
-    <title>JavaScript: Sintaxis y Variables</title>
+    <title>Clase 3: Ciclos e iteraciones</title>
 </head>
 <body>
-<div class="bg1">
-    
-    <!-- <script>
-        console.log("Esto es una mala practica.");
-    </script> -->
-    
+    <div class="bg1">
     <header id="header__clases">
         <nav class="clases__nav">
             <figure class="nav__logo">
@@ -26,24 +21,31 @@
                 <li class="nav__item"><a class="nav__link" href="../clases/">Clase Siguiente</a></li>
             </ul>
         </nav>
-     </header>
-</div>
-<main id="clases__main">
+    </header>
+    </div>
+
+     <main id="clases__main">
     <div class="bg2">
         <section class="clases__section c1__section1">
             <h2 class="clases__title">Consignas:</h2>
             <article class="clases__article">
                 <ol class="consignas__list">
-                    <li class="consignas__item">Muestre un mensaje en consola que diga lo siguiente: "¡MIRÁ MAMÁAA, ESTOY PROGRAMANDO!"</li>
-                    <li class="consignas__item">Hacer una variable que almacene un número par mayor a 10.</li>
-                    <li class="consignas__item">Hacer una variable que almacene un numero impar menor a 100.</li>
-                    <li class="consignas__item">Visualizar en consola la suma de las dos variables numéricas que hicimos.</li>
-                    <li class="consignas__item">Con un cuadro de diálogo, pregúntele el nombre al usuario que ingresa a la web y guarde su valor en una variable.</li>
-                    <li class="consignas__item">Visualizar en consola, junto al nombre del usuario, el siguiente mensaje: "Bienvenide a nuestra primera web -usuario-"</li>
-                    <li class="consignas__item">Genere una nueva variable que almacene el número 5 y que se multiplique con el número impar.</li>
-                    <li class="consignas__item">Declare tres variables con nombres aleatorios como valor. Concatene y visualice en consola cada uno de los nombres de las participantes del grupo en un solo console.log</li>
-                    <li class="consignas__item">Reste 100 a la variable que multiplica por 5 al número primo.</li>
-                    <li class="consignas__item">Cotejar el tipo de dato del punto 3 y 5.</li>
+                    <li class="consignas__item">Crea una variable con el nombre mostrarMensaje y dale un valor true o false. Evalúe con una sentencia condicional su
+                        expresión lógica. Si es true, genere una mensaje en consola con la siguiente frase: "Bienvenido a mi web",
+                        en caso contrario, muestre en consola: "Usted no tiene acceso".</li>
+                    <li class="consignas__item">Crear una estructura condicional que evalúe si un número, alojado en una variable, es positivo. En el caso de que
+                        así sea, envíe un mensaje en consola con la siguiente frase: "Este número vibra alto", en el caso de que el número sea
+                        negativo, envie un mensaje en consola: "Este número es negativo".</li>
+                    <li class="consignas__item">Crear una estructura condicional que evalúe un número entre el 0 y el 10 y devuelva un string dependiendo de lo siguiente:
+                        <ul>
+                            <li><span>Menor a 6:</span> Desaprobado</li>
+                            <li><span>Mayor o igual a 6 y menor a 7:</span> Regular</li>
+                            <li><span>Mayor 0 igual a 7 y menor a 8:</span>  Bueno</li>
+                            <li><span>Mayor o igual a entre 8 y menor a 10:</span> Muy Bueno</li>
+                            <li><span>Igual a 10:</span> Excelente</li>
+                            <li><span>Menor 0 o mayor a 10:</span> Puntaje inválido</li>
+                        </ul>
+                    </li>
                 </ol>
             </article>
         </section>
@@ -72,9 +74,9 @@
                     <p>La forma correcta es linkear tu codigo JavaScript justo antes de la etiqueta de cierre dle Body del HTML con las etiquetas SCRIPT agregando SRC para señalar la ruta
                         en la que se encuentra tu archivo .js</p>
                     <p>Ejemplo 1: Mala practica</p>
-                    <img src="../img/clase1/ejemplo1.png" alt="" srcset="">
+                    <img src="" alt="" srcset="">
                     <p>Ejemplo 2: Forma correcta</p>
-                    <img src="../img/clase1/ejemplo2.png" alt="" srcset="">
+                    <img src="" alt="" srcset="">
                 </article>
                 <article class="clase__tema">
                     <div class="div--column">
@@ -106,18 +108,18 @@
                     <p>Declarar una variable significa crearla. Para esto usamos la palabra reservada var, let o const. Escribimos una de estas palabras claves seguido del nombre de nuestra variable. Para los nombres no debemos utilizar ni espacios ni caracteres especiales.</p>
 
                     <p>Ejemplo 1: Mala practica</p>
-                    <img src="../img/clase1/ejemplo3.png" alt="" srcset="">
+                    <img src="" alt="" srcset="">
                     <p>Ejemplo 2: Forma correcta</p>
-                    <img src="../img/clase1/ejemplo4.png" alt="" srcset="">
+                    <img src="" alt="" srcset="">
                 </article>
                 <article class="clase__tema">
                     <h4>Consola</h4>
                     <P>La sentencia console.log() muestra el mensaje que pasemos como parámetro a la llamada en la consola JavaScript del Navegador web.</P>
                     <p>Específicamente, console.log brinda un tratamiento especial a los elementos del DOM, mientras que console.dir no. Esto es útil a menudo cuando intentas ver la representación completa del objeto JavaScript del DOM.</p>
                     <p>Ejemplo 1:</p>
-                    <img src="../img/clase1/ejemplo5.png" alt="">
+                    <img src="" alt="">
                     <p>Ejemplo 2:</p>
-                    <img src="../img/clase1/ejemplo6.png" alt="">
+                    <img src="" alt="">
                 </article>
                 <article class="clase__tema">
                     <h4>Datos Primitivos: Number y String</h4>
@@ -125,27 +127,27 @@
                     <p><span>Number: </span>un valor numérico puede ser entero o decimal.</p>
                     <p><span>String: </span>por otro lado, un string o cadena de texto, es un valor compuesto por uno o más caracteres, definido entre comillas simples o dobles.</p>
                     <p>Ejemplo de Number:</p>
-                    <img src="../img/clase1/ejemplo8.png" alt="" srcset="">
+                    <img src="" alt="" srcset="">
                     <p>Ejemplo de String:</p>
-                    <img src="../img/clase1/ejemplo7.png" alt="" srcset="">
+                    <img src="" alt="" srcset="">
                 </article>
                 <article class="clase__tema">
                     <h4>Operaciones Aritmeticas</h4>
                     <P>Con variables de valores numéricos podes realizar operaciones matemáticas: sumas, restas, multiplicaciones, etc.</P>
                     <p>Con variables de tipo string (texto) se puede concatenar los valores, es decir combinarlas.</p>
                     <p>Ejemplo de operaciones con valores numericos</p>
-                    <img src="../img/clase1/ejemplo9.png" alt="" srcset="">
+                    <img src="" alt="" srcset="">
                     <p>Ejemplo de operaciones con  valores tipo string</p>
-                    <img src="../img/clase1/ejemplo10.png" alt="" srcset="">
+                    <img src="" alt="" srcset="">
                 </article>
                 <article class="clase__tema">
                     <h4>Prompt y Alert</h4>
                     <P><span>Prormpt:</span>La sentencia  prompt() mostrará un cuadro de diálogo para que el usuario ingrese un dato. Se puede proporcionar un mensaje que se colocará sobre el campo de texto. El valor que devuelve es una cadena que representa lo que el usuario ingresó.</P>
                     <p><span>Alert: </span>La sentencia alert() mostrará una ventana sobre la página web que estemos accediendo mostrando el mensaje que se pase como parámetro a la llamada.</p>
                     <p>Ejemplo de Prompt</p>
-                    <img src="../img/clase1/ejemplo12.png" alt="" srcset="">
+                    <img src="" alt="" srcset="">
                     <p>Ejemplo de Alert</p>
-                    <img src="../img/clase1/ejemplo11.png" alt="" srcset="">
+                    <img src="" alt="" srcset="">
                 </article>
                 <article class="clase__tema disabled">
                     <h4>¿Cómo incluir JavaScript en tus proyectos?</h4>
@@ -153,15 +155,15 @@
                     <p>La forma correcta es linkear tu codigo JavaScript justo antes de la etiqueta de cierre dle Body del HTML con las etiquetas SCRIPT agregando SRC para señalar la ruta
                         en la que se encuentra tu archivo .js</p>
                     <p>Ejemplo 1: Mala practica</p>
-                    <img src="../img/clase1/ejemplo1.png" alt="" srcset="">
+                    <img src="" alt="" srcset="">
                     <p>Ejemplo 2: Forma correcta</p>
-                    <img src="../img/clase1/ejemplo2.png" alt="" srcset="">
+                    <img src="" alt="" srcset="">
                 </article>
         </section>
     </div>
-</main>
+    </main>
 
-<div class="bg1">
+    <div class="bg1">
     <footer id="js__footer">
         <div class="footer__imgs">
             <img class="img1" src="../img/jslogo.webp" alt="">
@@ -171,9 +173,8 @@
             <p>Anotaciones, resumenes, consignas y practicas desarrolladas en el curso de JavaScript dictado en Coderhouse.</p> 
         </div>
     </footer>
-</div>
+    </div>
 
-
-<script src="../js/clase1.js"></script>
+    <script src="../js/clase3.js"></script>
 </body>
 </html>
