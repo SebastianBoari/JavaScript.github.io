@@ -4,10 +4,176 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 4:</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../img/jslogo.webp">
+    <title>Clase 4: Programacion con Funciones</title>
 </head>
 <body>
-    
+    <div class="bg1">
+    <header id="header__clases">
+        <nav class="clases__nav">
+            <figure class="nav__logo">
+                <a href="../index.html"><img class="logo__img" src="../img/jslogo.webp" alt=""></a>
+            </figure>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
+                <li class="nav__item"><a class="nav__link" href="../clases/">Clase Anterior</a></li>
+                <li class="nav__item"><a class="nav__link" href="../clases/">Clase Siguiente</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+
+     <main id="clases__main">
+    <div class="bg2">
+        <section class="clases__section c1__section1">
+            <h2 class="clases__title">Consignas:</h2>
+            <article class="clases__article">
+                <ol class="consignas__list">
+                    <li class="consignas__item">Crea una variable con el nombre mostrarMensaje y dale un valor true o false. Evalúe con una sentencia condicional su
+                        expresión lógica. Si es true, genere una mensaje en consola con la siguiente frase: "Bienvenido a mi web",
+                        en caso contrario, muestre en consola: "Usted no tiene acceso".</li>
+                    <li class="consignas__item">Crear una estructura condicional que evalúe si un número, alojado en una variable, es positivo. En el caso de que
+                        así sea, envíe un mensaje en consola con la siguiente frase: "Este número vibra alto", en el caso de que el número sea
+                        negativo, envie un mensaje en consola: "Este número es negativo".</li>
+                    <li class="consignas__item">Crear una estructura condicional que evalúe un número entre el 0 y el 10 y devuelva un string dependiendo de lo siguiente:
+                        <ul>
+                            <li><span>Menor a 6:</span> Desaprobado</li>
+                            <li><span>Mayor o igual a 6 y menor a 7:</span> Regular</li>
+                            <li><span>Mayor 0 igual a 7 y menor a 8:</span>  Bueno</li>
+                            <li><span>Mayor o igual a entre 8 y menor a 10:</span> Muy Bueno</li>
+                            <li><span>Igual a 10:</span> Excelente</li>
+                            <li><span>Menor 0 o mayor a 10:</span> Puntaje inválido</li>
+                        </ul>
+                    </li>
+                </ol>
+            </article>
+        </section>
+    </div>
+
+    <div class="bg2">
+        <section class="clases__anotaciones">
+            <h2 class="clases__title">Anotaciones:</h2>
+            <article class="article__anotaciones">
+                <article class="anotaciones__temario">
+                    <h3 class="temario__title">Temario de la clase:</h3>
+                    <ul class="temario__list">
+                        <li class="temario__item">¿Cómo incluir JavaScript en tus proyectos?</li>
+                        <li class="temario__item">Glosario básico: Script, Sentencia, Palabras Reservadas</li>
+                        <li class="temario__item">Sintaxis de JavaScript</li>
+                        <li class="temario__item">Declaración de variables: var, let y const</li>
+                        <li class="temario__item">Console.log</li>
+                        <li class="temario__item">Datos primitivos: Number y String</li>
+                        <li class="temario__item">Operaciones aritméticas</li>
+                        <li class="temario__item">Cuadros de diálogo: alert y prompt</li>
+                    </ul>
+                </article>
+                <article class="clase__tema">
+                    <h4>¿Cómo incluir JavaScript en tus proyectos?</h4>
+                    <P>Puedes incluir tu codigo JavaScript directamente en el archivo HTML con las etiquetas SCRIPT pero es considerado mala practica.</P>
+                    <p>La forma correcta es linkear tu codigo JavaScript justo antes de la etiqueta de cierre dle Body del HTML con las etiquetas SCRIPT agregando SRC para señalar la ruta
+                        en la que se encuentra tu archivo .js</p>
+                    <p>Ejemplo 1: Mala practica</p>
+                    <img src="" alt="" srcset="">
+                    <p>Ejemplo 2: Forma correcta</p>
+                    <img src="" alt="" srcset="">
+                </article>
+                <article class="clase__tema">
+                    <div class="div--column">
+                        <h4>¿Que es un script?</h4>
+                        <P>Un script es un programa que consta de definiciones de funciones, definiciones de variables y sentencias de programa ejecutable.</P>
+                    </div>
+                    <div class="div--column">
+                        <h4>¿Que es un sentencia?</h4>
+                        <p>En un lenguaje de programación, una sentencia es una línea de código al mando de una tarea. Cada script/programa consiste en una secuencia de sentencias.</p>
+                    </div>
+                    <div class="div--column">
+                        <h4>Palabras Reservadas</h4>
+                        <p>Una palabra reservada es una palabra que tiene un significado gramatical especial y no puede ser utilizada como un identificador de objetos en códigos del mismo, como pueden ser las variables.</p>
+                    </div>
+                </article>
+                <article class="clase__tema">
+                    <h4>Sintaxis de JavaScript</h4>
+                    <P><span>No se tienen en cuenta los espacios en blanco y las nuevas líneas: </span>como sucede con XHTML, el intérprete de JavaScript ignora cualquier espacio en blanco sobrante, por lo que el código se puede ordenar de forma adecuada para entenderlo mejor (tabulando las líneas, añadiendo espacios, creando nuevas líneas, etc.)</P>
+                    <p><span>Se distinguen las mayúsculas y minúsculas: </span>al igual que sucede con la sintaxis de las etiquetas y elementos XHTML. Sin embargo, si en una página XHTML se utilizan indistintamente mayúsculas y minúsculas, la página se visualiza correctamente, siendo el único problema la no validación de la página. En cambio, si en JavaScript se intercambian mayúsculas y minúsculas el script no funciona.</p>
+                    <p><span>No se define el tipo de las variables: </span>al crear una variable, no es necesario indicar el tipo de dato que almacenará. De esta forma, una misma variable puede almacenar diferentes tipos de datos durante la ejecución del script.</p>
+                    <p><span>No es necesario terminar cada sentencia con el carácter de punto y coma (;): </span>en la mayoría de lenguajes de programación, es obligatorio terminar cada sentencia con el carácter ;. Aunque JavaScript no obliga a hacerlo, es conveniente seguir la tradición de terminar cada sentencia con el carácter del punto y coma (;).</p>
+                    <p><span>Se pueden incluir comentarios: </span>los comentarios se utilizan para añadir información en el código fuente del programa. Aunque el contenido de los comentarios no se visualiza por pantalla, si que se envía al navegador del usuario junto con el resto del script, por lo que es necesario extremar las precauciones sobre la información incluida en los comentarios.</p>
+                </article>
+                <article class="clase__tema">
+                    <h4>Variables</h4>
+                    <P>Una variable es un espacio reservado en la memoria que, como su nombre indica, puede cambiar de contenido a lo largo de la ejecución de un programa. 
+                    En las variables almacenamos diversos tipos de datos que utilizamos en la aplicación.</P>
+                    <h4>Declaracion de Variables</h4>
+                    <p>Declarar una variable significa crearla. Para esto usamos la palabra reservada var, let o const. Escribimos una de estas palabras claves seguido del nombre de nuestra variable. Para los nombres no debemos utilizar ni espacios ni caracteres especiales.</p>
+
+                    <p>Ejemplo 1: Mala practica</p>
+                    <img src="" alt="" srcset="">
+                    <p>Ejemplo 2: Forma correcta</p>
+                    <img src="" alt="" srcset="">
+                </article>
+                <article class="clase__tema">
+                    <h4>Consola</h4>
+                    <P>La sentencia console.log() muestra el mensaje que pasemos como parámetro a la llamada en la consola JavaScript del Navegador web.</P>
+                    <p>Específicamente, console.log brinda un tratamiento especial a los elementos del DOM, mientras que console.dir no. Esto es útil a menudo cuando intentas ver la representación completa del objeto JavaScript del DOM.</p>
+                    <p>Ejemplo 1:</p>
+                    <img src="" alt="">
+                    <p>Ejemplo 2:</p>
+                    <img src="" alt="">
+                </article>
+                <article class="clase__tema">
+                    <h4>Datos Primitivos: Number y String</h4>
+                    <P>Podemos asociar distintos valores a una variable en JavaScript. Para empezar trabajaremos con los tipos de datos más comunes, los cuales son las cadenas de texto y los números</P>
+                    <p><span>Number: </span>un valor numérico puede ser entero o decimal.</p>
+                    <p><span>String: </span>por otro lado, un string o cadena de texto, es un valor compuesto por uno o más caracteres, definido entre comillas simples o dobles.</p>
+                    <p>Ejemplo de Number:</p>
+                    <img src="" alt="" srcset="">
+                    <p>Ejemplo de String:</p>
+                    <img src="" alt="" srcset="">
+                </article>
+                <article class="clase__tema">
+                    <h4>Operaciones Aritmeticas</h4>
+                    <P>Con variables de valores numéricos podes realizar operaciones matemáticas: sumas, restas, multiplicaciones, etc.</P>
+                    <p>Con variables de tipo string (texto) se puede concatenar los valores, es decir combinarlas.</p>
+                    <p>Ejemplo de operaciones con valores numericos</p>
+                    <img src="" alt="" srcset="">
+                    <p>Ejemplo de operaciones con  valores tipo string</p>
+                    <img src="" alt="" srcset="">
+                </article>
+                <article class="clase__tema">
+                    <h4>Prompt y Alert</h4>
+                    <P><span>Prormpt:</span>La sentencia  prompt() mostrará un cuadro de diálogo para que el usuario ingrese un dato. Se puede proporcionar un mensaje que se colocará sobre el campo de texto. El valor que devuelve es una cadena que representa lo que el usuario ingresó.</P>
+                    <p><span>Alert: </span>La sentencia alert() mostrará una ventana sobre la página web que estemos accediendo mostrando el mensaje que se pase como parámetro a la llamada.</p>
+                    <p>Ejemplo de Prompt</p>
+                    <img src="" alt="" srcset="">
+                    <p>Ejemplo de Alert</p>
+                    <img src="" alt="" srcset="">
+                </article>
+                <article class="clase__tema disabled">
+                    <h4>¿Cómo incluir JavaScript en tus proyectos?</h4>
+                    <P>Puedes incluir tu codigo JavaScript directamente en el archivo HTML con las etiquetas SCRIPT pero es considerado mala practica.</P>
+                    <p>La forma correcta es linkear tu codigo JavaScript justo antes de la etiqueta de cierre dle Body del HTML con las etiquetas SCRIPT agregando SRC para señalar la ruta
+                        en la que se encuentra tu archivo .js</p>
+                    <p>Ejemplo 1: Mala practica</p>
+                    <img src="" alt="" srcset="">
+                    <p>Ejemplo 2: Forma correcta</p>
+                    <img src="" alt="" srcset="">
+                </article>
+        </section>
+    </div>
+    </main>
+
+    <div class="bg1">
+    <footer id="js__footer">
+        <div class="footer__imgs">
+            <img class="img1" src="../img/jslogo.webp" alt="">
+            <a target="_blank" href="https://www.coderhouse.com/"><img class="img2" src="../img/logos_coderhouse.png" alt=""></a>
+        </div>
+        <div class="footer__descrip">
+            <p>Anotaciones, resumenes, consignas y practicas desarrolladas en el curso de JavaScript dictado en Coderhouse.</p> 
+        </div>
+    </footer>
+    </div>
 
     <script src="../js/clase4.js"></script>
 </body>

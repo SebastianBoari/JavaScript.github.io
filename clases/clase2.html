@@ -6,15 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="icon" href="../img/jslogo.webp">
-    <title>JavaScript: Sintaxis y Variables</title>
+    <title>Clase 2: Control de Flujos</title>
 </head>
 <body>
 <div class="bg1">
-    
-    <!-- <script>
-        console.log("Esto es una mala practica.");
-    </script> -->
-    
     <header id="header__clases">
         <nav class="clases__nav">
             <figure class="nav__logo">
@@ -62,107 +57,193 @@
                 <article class="anotaciones__temario">
                     <h3 class="temario__title">Temario de la clase:</h3>
                     <ul class="temario__list">
-                        <li class="temario__item">¿Cómo incluir JavaScript en tus proyectos?</li>
-                        <li class="temario__item">Glosario básico: Script, Sentencia, Palabras Reservadas</li>
-                        <li class="temario__item">Sintaxis de JavaScript</li>
-                        <li class="temario__item">Declaración de variables: var, let y const</li>
-                        <li class="temario__item">Console.log</li>
-                        <li class="temario__item">Datos primitivos: Number y String</li>
-                        <li class="temario__item">Operaciones aritméticas</li>
-                        <li class="temario__item">Cuadros de diálogo: alert y prompt</li>
+                        <li class="temario__item">Condicionales en JavaScript</li>
+                        <li class="temario__item">Control de Flujos</li>
+                        <li class="temario__item">Valores Booleanos</li>
+                        <li class="temario__item">Operadores de Comparacion</li>
+                        <li class="temario__item">Operadores Logicos</li>
                     </ul>
                 </article>
-                <article class="clase__tema">
-                    <h4>¿Cómo incluir JavaScript en tus proyectos?</h4>
-                    <P>Puedes incluir tu codigo JavaScript directamente en el archivo HTML con las etiquetas SCRIPT pero es considerado mala practica.</P>
-                    <p>La forma correcta es linkear tu codigo JavaScript justo antes de la etiqueta de cierre dle Body del HTML con las etiquetas SCRIPT agregando SRC para señalar la ruta
-                        en la que se encuentra tu archivo .js</p>
-                    <p>Ejemplo 1: Mala practica</p>
-                    <img src="../img/ejemplo1.png" alt="" srcset="">
-                    <p>Ejemplo 2: Forma correcta</p>
-                    <img src="../img/ejemplo2.png" alt="" srcset="">
-                </article>
-                <article class="clase__tema">
+                <article class="clase__tema clase2__tema1">
                     <div class="div--column">
-                        <h4>¿Que es un script?</h4>
-                        <P>Un script es un programa que consta de definiciones de funciones, definiciones de variables y sentencias de programa ejecutable.</P>
+                        <h4>Condicionales en JavaScript</h4>
+                        <P>A menudo cuando se escribe código se deben realizar diferentes acciones para diferentes condiciones. Las «instrucciones condicionales» se usan para realizar las diferentes acciones según una condición.</P>
                     </div>
                     <div class="div--column">
-                        <h4>¿Que es un sentencia?</h4>
-                        <p>En un lenguaje de programación, una sentencia es una línea de código al mando de una tarea. Cada script/programa consiste en una secuencia de sentencias.</p>
+                        <p><span>IF: </span> Se usa para ejecutar un bloque código si la condición es verdadera.</p>
+                        <img src="../img/clase2/ejemplo2.png" alt="">
+                    </div>
+                    <div>
+                        <p><span>IF… ELSE: </span> Se usa para ejecutar un bloque de código si la condición es verdadera u otro bloque de código si la condición es falsa.</p>
+                        <img src="../img/clase2/ejemplo3.png" alt="">
                     </div>
                     <div class="div--column">
-                        <h4>Palabras Reservadas</h4>
-                        <p>Una palabra reservada es una palabra que tiene un significado gramatical especial y no puede ser utilizada como un identificador de objetos en códigos del mismo, como pueden ser las variables.</p>
+                        <p><span>IF… ELSE IF… ELSE: </span> Se usa para seleccionar uno de los muchos bloques de código a ejecutar.</p>
+                        <img src="../img/clase2/ejemplo4.png" alt="">
+                    </div>
+                   <div class="div--column">
+                        <p><span>SWITCH: </span> Se usa para seleccionar uno de los varios bloques de código a ejecutar.</p>
+                        <img src="../img/clase2/ejemplo5.png" alt="">
+                   </div>
+                </article>
+                <article class="clase__tema clase2__tema2">
+                    <div class="div--column">
+                        <h4>Control de Flujos</h4>
+                        <p>El control de flujo (Control flow) es, en ciertos lenguajes de programación como en JavaScript, el orden en que son ejecutadas las instrucciones en el código.
+                        </p>
+                        <p>El código JavaScript se ejecuta, a grandes rasgos, en un orden líneal, desde la primera línea de código hasta la última. Sin embargo, este orden se altera cuando el intérprete (el navegador) encuentra un bloque de código que cambia el flujo.</p>
+                        <p>A los bloques de código que tienen la capacidad de alterar el flujo de ejecución de nuestro código JavaScript se les conoce como <span>estructuras de control</span>.</p>
+                    </div>
+                    <div class="div--column">
+                        <h4>Sentencia de bloque</h4>
+                        <p>La sentencia de bloque es una estructuras sencilla, que se utiliza simplemente para agrupar declaraciones, y no modifica el flujo de ejecución.</p>
+                        <img src="../img/clase2/ejemplo6.png" alt="">
+                    </div>
+                    <div class="div--column">
+                        <h4>Sentencia condicional</h4>
+                        <p>La sentencia condicional se utilizan para ejecutar un bloque de código únicamente si se cumple cierta condición.</p>
+                        <img src="../img/clase2/ejemplo7.png" alt="">
+                    </div>
+                    <div class="div--column">
+                        <h4>Sentencias de iteración</h4>
+                        <p>Las sentencias de iteración, también llamadas bucles o loops, se utilizan para ejecutar un bloque de código de forma reiterativa, y basada en alguna condición.</p>
+                    </div>
+                    <div class="div--column">
+                        <p><span>JavaScript cuenta con varias estructuras de este tipo.</span></p>
+                        <h4>while</h4>
+                        <p>La sentencia while itera sobre un bloque de código continuamente mientras la condición indicada sea verdadera.</p>
+                        <img src="../img/clase2/ejemplo8.png" alt="">
+                    </div>
+                    <div class="div--column">
+                        <h4>do … while</h4>
+                        <p>La sentencia do…while funciona igual que while, pero con la diferencia de que el bloque de código se ejecuta al menos una vez, independientemente del valor de la condición.</p>
+                        <img src="../img/clase2/ejemplo9.png" alt="">
+                    </div>
+                    <div class="div--column">
+                        <h4>for</h4>
+                        <p>La sentencia for recibe tres argumentos que determinan la forma de iteración del bloque de código.</p>
+                        <p>Una <span>expresión inicial</span> que se ejecuta una sola vez, antes de la primer iteración;</p>
+                        <p>Una <span>condición</span> que debe cumplirse para ejecutar el bloque de código;</p>
+                        <p>Una <span>expresión final</span> que se ejecuta al final de cada iteración;</p>
+                        <p>Por lo tanto, el bucle va a iterar sobre el bloque de código tantas veces como se cumpla la condición, y teniendo disponible dentro de su contexto los valores de las expresiones inicial y final.</p>
+                        <img src="../img/clase2/ejemplo10.png" alt="">
+                    </div>
+                    <div class="div--column">
+                        <h4>Sentencia switch</h4>
+                        <p>La sentencia switch evalúa una expresión, comparando su valor con otro valor llamado case. Cuando los valores coinciden, se ejecuta el código comprendido desde el case hasta el final del bloque switch, o hasta encontrar una sentencia break.</p>
+                        <p>Si ninguno de los case coincide con la expresión evaluada, se buscará una sentencia default, y si esta presente, se ejecutará el código que le sigue.</p>
+                        <img src="../img/clase2/ejemplo11.png" alt="">
+                    </div>
+                    <div class="div--column">
+                        <h4>Sentencia break</h4>
+                        <p>La sentencia break interrumpe abruptamente la ejecución de un bloque, sentencia de iteración o sentencia switch.</p>
+                    </div>
+                    <div class="div--column">
+                        <h4>Sentencia continue</h4>
+                        <p>La sentencia continue interrumpe la iteración en curso, y hace que se continúe con la siguiente.</p>
                     </div>
                 </article>
-                <article class="clase__tema">
-                    <h4>Sintaxis de JavaScript</h4>
-                    <P><span>No se tienen en cuenta los espacios en blanco y las nuevas líneas: </span>como sucede con XHTML, el intérprete de JavaScript ignora cualquier espacio en blanco sobrante, por lo que el código se puede ordenar de forma adecuada para entenderlo mejor (tabulando las líneas, añadiendo espacios, creando nuevas líneas, etc.)</P>
-                    <p><span>Se distinguen las mayúsculas y minúsculas: </span>al igual que sucede con la sintaxis de las etiquetas y elementos XHTML. Sin embargo, si en una página XHTML se utilizan indistintamente mayúsculas y minúsculas, la página se visualiza correctamente, siendo el único problema la no validación de la página. En cambio, si en JavaScript se intercambian mayúsculas y minúsculas el script no funciona.</p>
-                    <p><span>No se define el tipo de las variables: </span>al crear una variable, no es necesario indicar el tipo de dato que almacenará. De esta forma, una misma variable puede almacenar diferentes tipos de datos durante la ejecución del script.</p>
-                    <p><span>No es necesario terminar cada sentencia con el carácter de punto y coma (;): </span>en la mayoría de lenguajes de programación, es obligatorio terminar cada sentencia con el carácter ;. Aunque JavaScript no obliga a hacerlo, es conveniente seguir la tradición de terminar cada sentencia con el carácter del punto y coma (;).</p>
-                    <p><span>Se pueden incluir comentarios: </span>los comentarios se utilizan para añadir información en el código fuente del programa. Aunque el contenido de los comentarios no se visualiza por pantalla, si que se envía al navegador del usuario junto con el resto del script, por lo que es necesario extremar las precauciones sobre la información incluida en los comentarios.</p>
+                <article class="clase__tema clase2__tema3">
+                    <h4>Valores Booleanos</h4>
+                    <P>Los booleanos son un tipo de dato primitivo comúnmente usado en lenguajes de programación. Por definición, un booleano tiene 2 posibles valores: true (verdadero) o false (falso).</P>
+                    <p>En JavaScript, frecuentemente se genera de manera implícita la coerción de tipos a booleano. Si, por ejemplo, tienes una sentencia if que evalúa cierta expresión, esa expresión genera coerción a booleano:</p>
+                    <img src="../img/clase2/ejemplo1.png" alt="" srcset="">
+                    <p>En el ejemplo anterior, la sentencia if evalúa a la constante a. Dado que el valor de a no es de tipo booleano, JavaScript genera coerción de tipo para poder evaluar la sentencia y concluir si se trata de un valor Truthy (verdadero) o Falsy (falso). Obtenemos como resultado 'una cadena' debido a que las cadenas de texto en JavaScript son un valor verdadero.</p>
+                    <div class="div--column">
+                        <p><span>Solo hay unos cuantos valores que generan coerción a falso:</span></p>
+                    <ul>
+                        <li>false (en realidad no genera coerción porque ya es falso)</li>
+                        <li>null</li>
+                        <li>undefined</li>
+                        <li>NaN (Not an Number)</li>
+                        <li>0</li>
+                        <li>-0</li>
+                        <li>0n, -0n (BigInt)</li>
+                        <li>" ", ' ', ` ` (cadena de texto vacía)</li>
+                        <li>document.all</li>
+                    </ul>
+                    <p>Cualquier otro valor diferente de los anteriores generan coerción a verdadero.</p>
+                    </div>
                 </article>
-                <article class="clase__tema">
-                    <h4>Variables</h4>
-                    <P>Una variable es un espacio reservado en la memoria que, como su nombre indica, puede cambiar de contenido a lo largo de la ejecución de un programa. 
-                    En las variables almacenamos diversos tipos de datos que utilizamos en la aplicación.</P>
-                    <h4>Declaracion de Variables</h4>
-                    <p>Declarar una variable significa crearla. Para esto usamos la palabra reservada var, let o const. Escribimos una de estas palabras claves seguido del nombre de nuestra variable. Para los nombres no debemos utilizar ni espacios ni caracteres especiales.</p>
-
-                    <p>Ejemplo 1: Mala practica</p>
-                    <img src="../img/ejemplo3.png" alt="" srcset="">
-                    <p>Ejemplo 2: Forma correcta</p>
-                    <img src="../img/ejemplo4.png" alt="" srcset="">
+                <article class="clase__tema clase2__tema4">
+                    <div class="div--column">
+                        <h4>Operadores lógicos</h4>
+                        <p>Los operadores lógicos se utilizan normalmente con valores booleanos (lógicos); cuando lo son, devuelven un valor booleano. Sin embargo, los operadores && y || en realidad devuelven el valor de uno de los operandos especificados, por lo que si estos operadores se utilizan con valores no booleanos, pueden devolver un valor no booleano. Los operadores lógicos se describen en la siguiente tabla.</p>
+                    </div>
+                    <div class="div--column">
+                        <h4> AND Logico: && </h4>
+                        <p>Se expresa a través de doble ampersand "&&"</p>
+                        <p>Evalua operandos</p>
+                        <p>Los dos operandos deben de ser true</p>
+                        <img src="../img/clase2/ejemplo12.png" alt="">
+                    </div>
+                    <div class="div--column">
+                        <h4>OR Logico: II</h4>
+                        <p>Es la o en nuestro lenguaje.</p>
+                        <p>Se representa con las barras</p>
+                        <p>Implica que al menos uno de los operandos sea true.</p>
+                        <p>Si todos los operandos son falsos devuelve como resultado false.</p>
+                        <img src="../img/clase2/ejemplo13.png" alt="">
+                    </div>
+                    <div class="div--column">
+                        <h4>NOT Logico: !</h4>
+                        <p>Se representa con el signo de exclamación !</p>
+                        <p>Se puede utilizar hasta dos veces</p>
+                        <p>Convierte el valor booleano por defecto y lo invierte</p>
+                        <img src="../img/clase2/ejemplo14.png" alt="">
+                    </div>
                 </article>
-                <article class="clase__tema">
-                    <h4>Consola</h4>
-                    <P>La sentencia console.log() muestra el mensaje que pasemos como parámetro a la llamada en la consola JavaScript del Navegador web.</P>
-                    <p>Específicamente, console.log brinda un tratamiento especial a los elementos del DOM, mientras que console.dir no. Esto es útil a menudo cuando intentas ver la representación completa del objeto JavaScript del DOM.</p>
-                    <p>Ejemplo 1:</p>
-                    <img src="../img/ejemplo5.png" alt="">
-                    <p>Ejemplo 2:</p>
-                    <img src="../img/ejemplo6.png" alt="">
+                <article class="clase__tema clase2__tema5">
+                    <div class="div--column">
+                        <h4>Operadores de Comparacion</h4>
+                        <p>JavaScript Resuelve primero los operadores de comparacion y luego de los logicos.</p>
+                        <p>Un operador de comparación compara sus operandos y devuelve un valor lógico en función de si la comparación es verdadera (true) o falsa (false). Los operandos pueden ser valores numéricos, de cadena, lógicos u objetos. Las cadenas se comparan según el orden lexicográfico estándar, utilizando valores Unicode. En la mayoría de los casos, si los dos operandos no son del mismo tipo, JavaScript intenta convertirlos a un tipo apropiado para la comparación. Este comportamiento generalmente resulta en comparar los operandos numéricamente. Las únicas excepciones a la conversión de tipos dentro de las comparaciones involucran a los operadores === y !==, que realizan comparaciones estrictas de igualdad y desigualdad. Estos operadores no intentan convertir los operandos a tipos compatibles antes de verificar la igualdad</p>
+                    </div>
+                   <div class="div--column">
+                        <h4>Mayor </h4>
+                        <p>Evalúa siempre de izquierda a derecha</p>
+                        <img src="../img/clase2/ejemplo15.png" alt="">
+                   </div>
+                   <div class="div--column">
+                    <h4>Menor </h4>
+                    <p>Evalua siempre de izquierda a derecha cuál es el menor</p>
+                    <img src="../img/clase2/ejemplo16.png" alt="">
+                   </div>
+                   <div class="div--column">
+                        <h4>Mayor o Igual</h4>
+                        <p>Es incluyente del numero con el que se compara</p>
+                        <img src="../img/clase2/ejemplo17.png" alt="">
+                   </div>
+                   <div class="div--column">
+                        <h4>Menor o Igual</h4>
+                        <p>Es incluyente del numero con el que se compara</p>
+                        <img src="../img/clase2/ejemplo18.png" alt="">
+                   </div>
+                   <div class="div--column">
+                        <h4>Igualdad</h4>
+                        <p>Compara si los valores de dos operandos son iguales</p>
+                        <p>No compara el tipo de dato, solo el valor</p>
+                        <img src="../img/clase2/ejemplo19.png" alt="">
+                   </div>
+                   <div class="div--column">
+                        <h4>Igualdad Estricta</h4>
+                        <p>Evalua el valor y el tipo de dato de dos operandos.</p>
+                        <p>Si no son iguales el valor y el tipo de dato da como resultado false.</p>
+                        <img src="../img/clase2/ejemplo20.png" alt="">
+                   </div>
+                   <div class="div--column">
+                        <h4>Desigualdad</h4>
+                        <p>true siempre y cuando los valores sean diferentes</p>
+                        <img src="../img/clase2/ejemplo21.png" alt="">
+                   </div>
+                   <div class="div--column">
+                        <h4>Desigualdad Estricta</h4>
+                        <p>Evalúa que tanto el valor como el tipo de dato sean desiguales</p>
+                        <img src="../img/clase2/ejemplo22.png" alt="">
+                   </div>
                 </article>
-                <article class="clase__tema">
-                    <h4>Datos Primitivos: Number y String</h4>
-                    <P>Podemos asociar distintos valores a una variable en JavaScript. Para empezar trabajaremos con los tipos de datos más comunes, los cuales son las cadenas de texto y los números</P>
-                    <p><span>Number: </span>un valor numérico puede ser entero o decimal.</p>
-                    <p><span>String: </span>por otro lado, un string o cadena de texto, es un valor compuesto por uno o más caracteres, definido entre comillas simples o dobles.</p>
-                    <p>Ejemplo de Number:</p>
-                    <img src="../img/ejemplo8.png" alt="" srcset="">
-                    <p>Ejemplo de String:</p>
-                    <img src="../img/ejemplo7.png" alt="" srcset="">
-                </article>
-                <article class="clase__tema">
-                    <h4>Operaciones Aritmeticas</h4>
-                    <P>Con variables de valores numéricos podes realizar operaciones matemáticas: sumas, restas, multiplicaciones, etc.</P>
-                    <p>Con variables de tipo string (texto) se puede concatenar los valores, es decir combinarlas.</p>
-                    <p>Ejemplo de operaciones con valores numericos</p>
-                    <img src="../img/ejemplo9.png" alt="" srcset="">
-                    <p>Ejemplo de operaciones con  valores tipo string</p>
-                    <img src="../img/ejemplo10.png" alt="" srcset="">
-                </article>
-                <article class="clase__tema">
-                    <h4>Prompt y Alert</h4>
-                    <P><span>Prormpt:</span>La sentencia  prompt() mostrará un cuadro de diálogo para que el usuario ingrese un dato. Se puede proporcionar un mensaje que se colocará sobre el campo de texto. El valor que devuelve es una cadena que representa lo que el usuario ingresó.</P>
-                    <p><span>Alert: </span>La sentencia alert() mostrará una ventana sobre la página web que estemos accediendo mostrando el mensaje que se pase como parámetro a la llamada.</p>
-                    <p>Ejemplo de Prompt</p>
-                    <img src="../img/ejemplo12.png" alt="" srcset="">
-                    <p>Ejemplo de Alert</p>
-                    <img src="../img/ejemplo11.png" alt="" srcset="">
-                </article>
-                <article class="clase__tema disabled">
-                    <h4>¿Cómo incluir JavaScript en tus proyectos?</h4>
-                    <P>Puedes incluir tu codigo JavaScript directamente en el archivo HTML con las etiquetas SCRIPT pero es considerado mala practica.</P>
-                    <p>La forma correcta es linkear tu codigo JavaScript justo antes de la etiqueta de cierre dle Body del HTML con las etiquetas SCRIPT agregando SRC para señalar la ruta
-                        en la que se encuentra tu archivo .js</p>
-                    <p>Ejemplo 1: Mala practica</p>
-                    <img src="../img/ejemplo1.png" alt="" srcset="">
-                    <p>Ejemplo 2: Forma correcta</p>
-                    <img src="../img/ejemplo2.png" alt="" srcset="">
-                </article>
+                
+            </article>
         </section>
     </div>
 </main>

@@ -198,7 +198,7 @@ header {
   margin: 0 auto;
   padding: 64px 0;
   display: grid;
-  grid-template-rows: auto auto;
+  grid-auto-columns: auto auto;
   grid-row-gap: 64px; }
   #clases__main .clases__anotaciones .clases__title {
     padding: 32px;
@@ -213,14 +213,12 @@ header {
     background-color: #222222;
     padding: 64px; }
     #clases__main .clases__anotaciones .article__anotaciones .anotaciones__temario {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      align-items: stretch;
-      gap: 32px;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 1fr 11fr;
       border: solid 3px #f7df1e;
-      padding: 64px; }
+      padding: 64px;
+      grid-row-end: span 2; }
       #clases__main .clases__anotaciones .article__anotaciones .anotaciones__temario .temario__title {
         color: #f7df1e;
         font-size: 32px;
@@ -231,12 +229,12 @@ header {
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: stretch;
-        gap: 46px;
+        gap: 0;
         list-style-type: none; }
         #clases__main .clases__anotaciones .article__anotaciones .anotaciones__temario .temario__list .temario__item {
           color: white;
-          font-size: 22px;
-          font-weight: 400; }
+          font-size: 28px;
+          font-weight: 600; }
     #clases__main .clases__anotaciones .article__anotaciones .clase__tema {
       display: flex;
       flex-direction: column;
@@ -260,6 +258,18 @@ header {
           color: #f7df1e; }
       #clases__main .clases__anotaciones .article__anotaciones .clase__tema img {
         width: 540px; }
+      #clases__main .clases__anotaciones .article__anotaciones .clase__tema ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 16px;
+        list-style-type: none; }
+        #clases__main .clases__anotaciones .article__anotaciones .clase__tema ul li {
+          color: white;
+          font-size: 18px;
+          font-weight: 400; }
 
 .div--column {
   display: flex;
@@ -268,3 +278,17 @@ header {
   justify-content: space-between;
   align-items: stretch;
   gap: 32px; }
+
+.clase2__tema1 {
+  grid-row-end: span 4; }
+
+.clase2__tema2 {
+  grid-row-end: span 8; }
+
+.clase2__tema4 {
+  grid-row-end: span 5; }
+
+.clase2__tema5 {
+  grid-column-end: span 2;
+  text-align: center;
+  max-width: 100%; }

@@ -70,7 +70,7 @@
         margin: 0 auto;
         padding: 64px 0;
         display: grid;
-        grid-template-rows: auto auto;
+        grid-auto-columns: auto auto;
         grid-row-gap: 64px;
         .clases__title{
             padding: 32px;
@@ -86,23 +86,25 @@
             background-color: rgb(34, 34, 34);
             padding: 64px;
             .anotaciones__temario{
-                @include flex(column, nowrap, space-between, stretch, 32px);
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: 1fr 11fr;
                 border: solid 3px rgba(247, 223, 30, 1);
                 padding: 64px;
+                grid-row-end: span 2;
                 .temario__title{
                     color: rgba(247, 223, 30, 1);
                     font-size: 32px;
                     font-weight: 600;
                 }
                 .temario__list{
-                    @include flex(column, nowrap, space-between, stretch, 46px);
+                    @include flex(column, nowrap, space-between, stretch, 0);
                     list-style-type: none;
                     .temario__item{
                         color: white;
-                        font-size: 22px;
-                        font-weight: 400;
+                        font-size: 28px;
+                        font-weight: 600;
                     }
-
                 }
             }
             .clase__tema{
@@ -126,6 +128,15 @@
                 }
                 img{
                     width: 540px;
+                }
+                ul{
+                    @include flex(column, nowrap, space-between, stretch, 16px);
+                    list-style-type: none;
+                    li{
+                        color: white;
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
                 }
             }
         }
