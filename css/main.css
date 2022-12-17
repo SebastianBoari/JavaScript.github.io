@@ -459,3 +459,15 @@ header {
           color: white;
           font-size: 18px;
           font-weight: 400; }
+    #clases__main .clases__anotaciones .article__anotaciones .clase4__tema1 {
+      align-self: start;
+      order: 1; }
+    #clases__main .clases__anotaciones .article__anotaciones .clase4__tema2 {
+      align-self: start;
+      order: 2; }
+    #clases__main .clases__anotaciones .article__anotaciones .clase4__tema3 {
+      align-self: start;
+      order: 1; }
+    #clases__main .clases__anotaciones .article__anotaciones .clase4__tema4 {
+      align-self: start;
+      order: 1; }
