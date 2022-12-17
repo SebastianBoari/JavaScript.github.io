@@ -24,38 +24,13 @@
     </header>
     </div>
 
-     <main id="clases__main">
+<main id="clases3__main">
     <div class="bg2">
-        <section class="clases__section c1__section1">
-            <h2 class="clases__title">Consignas:</h2>
-            <article class="clases__article">
-                <ol class="consignas__list">
-                    <li class="consignas__item">Crea una variable con el nombre mostrarMensaje y dale un valor true o false. Evalúe con una sentencia condicional su
-                        expresión lógica. Si es true, genere una mensaje en consola con la siguiente frase: "Bienvenido a mi web",
-                        en caso contrario, muestre en consola: "Usted no tiene acceso".</li>
-                    <li class="consignas__item">Crear una estructura condicional que evalúe si un número, alojado en una variable, es positivo. En el caso de que
-                        así sea, envíe un mensaje en consola con la siguiente frase: "Este número vibra alto", en el caso de que el número sea
-                        negativo, envie un mensaje en consola: "Este número es negativo".</li>
-                    <li class="consignas__item">Crear una estructura condicional que evalúe un número entre el 0 y el 10 y devuelva un string dependiendo de lo siguiente:
-                        <ul>
-                            <li><span>Menor a 6:</span> Desaprobado</li>
-                            <li><span>Mayor o igual a 6 y menor a 7:</span> Regular</li>
-                            <li><span>Mayor 0 igual a 7 y menor a 8:</span>  Bueno</li>
-                            <li><span>Mayor o igual a entre 8 y menor a 10:</span> Muy Bueno</li>
-                            <li><span>Igual a 10:</span> Excelente</li>
-                            <li><span>Menor 0 o mayor a 10:</span> Puntaje inválido</li>
-                        </ul>
-                    </li>
-                </ol>
-            </article>
-        </section>
-    </div>
+        <section class="clases3__anotaciones">
 
-    <div class="bg2">
-        <section class="clases__anotaciones">
-            <h2 class="clases__title">Anotaciones:</h2>
-            <article class="article__anotaciones">
-                <article class="anotaciones__temario">
+            <h2 class="clases3__title">Anotaciones:</h2>
+            <article class="article3__anotaciones">
+                <article class="anotaciones3__temario3">
                     <h3 class="temario__title">Temario de la clase:</h3>
                     <ul class="temario__list">
                         <li class="temario__item">Ciclo FOR: Estatico y Dinamico</li>
@@ -64,97 +39,92 @@
                         <li class="temario__item">Switch</li>
                     </ul>
                 </article>
-                <article class="clase__tema">
-                    <h4>¿Cómo incluir JavaScript en tus proyectos?</h4>
-                    <P>Puedes incluir tu codigo JavaScript directamente en el archivo HTML con las etiquetas SCRIPT pero es considerado mala practica.</P>
-                    <p>La forma correcta es linkear tu codigo JavaScript justo antes de la etiqueta de cierre dle Body del HTML con las etiquetas SCRIPT agregando SRC para señalar la ruta
-                        en la que se encuentra tu archivo .js</p>
-                    <p>Ejemplo 1: Mala practica</p>
-                    <img src="" alt="" srcset="">
-                    <p>Ejemplo 2: Forma correcta</p>
-                    <img src="" alt="" srcset="">
-                </article>
-                <article class="clase__tema">
-                    <div class="div--column">
-                        <h4>¿Que es un script?</h4>
-                        <P>Un script es un programa que consta de definiciones de funciones, definiciones de variables y sentencias de programa ejecutable.</P>
-                    </div>
-                    <div class="div--column">
-                        <h4>¿Que es un sentencia?</h4>
-                        <p>En un lenguaje de programación, una sentencia es una línea de código al mando de una tarea. Cada script/programa consiste en una secuencia de sentencias.</p>
-                    </div>
-                    <div class="div--column">
-                        <h4>Palabras Reservadas</h4>
-                        <p>Una palabra reservada es una palabra que tiene un significado gramatical especial y no puede ser utilizada como un identificador de objetos en códigos del mismo, como pueden ser las variables.</p>
-                    </div>
-                </article>
-                <article class="clase__tema">
-                    <h4>Sintaxis de JavaScript</h4>
-                    <P><span>No se tienen en cuenta los espacios en blanco y las nuevas líneas: </span>como sucede con XHTML, el intérprete de JavaScript ignora cualquier espacio en blanco sobrante, por lo que el código se puede ordenar de forma adecuada para entenderlo mejor (tabulando las líneas, añadiendo espacios, creando nuevas líneas, etc.)</P>
-                    <p><span>Se distinguen las mayúsculas y minúsculas: </span>al igual que sucede con la sintaxis de las etiquetas y elementos XHTML. Sin embargo, si en una página XHTML se utilizan indistintamente mayúsculas y minúsculas, la página se visualiza correctamente, siendo el único problema la no validación de la página. En cambio, si en JavaScript se intercambian mayúsculas y minúsculas el script no funciona.</p>
-                    <p><span>No se define el tipo de las variables: </span>al crear una variable, no es necesario indicar el tipo de dato que almacenará. De esta forma, una misma variable puede almacenar diferentes tipos de datos durante la ejecución del script.</p>
-                    <p><span>No es necesario terminar cada sentencia con el carácter de punto y coma (;): </span>en la mayoría de lenguajes de programación, es obligatorio terminar cada sentencia con el carácter ;. Aunque JavaScript no obliga a hacerlo, es conveniente seguir la tradición de terminar cada sentencia con el carácter del punto y coma (;).</p>
-                    <p><span>Se pueden incluir comentarios: </span>los comentarios se utilizan para añadir información en el código fuente del programa. Aunque el contenido de los comentarios no se visualiza por pantalla, si que se envía al navegador del usuario junto con el resto del script, por lo que es necesario extremar las precauciones sobre la información incluida en los comentarios.</p>
-                </article>
-                <article class="clase__tema">
-                    <h4>Variables</h4>
-                    <P>Una variable es un espacio reservado en la memoria que, como su nombre indica, puede cambiar de contenido a lo largo de la ejecución de un programa. 
-                    En las variables almacenamos diversos tipos de datos que utilizamos en la aplicación.</P>
-                    <h4>Declaracion de Variables</h4>
-                    <p>Declarar una variable significa crearla. Para esto usamos la palabra reservada var, let o const. Escribimos una de estas palabras claves seguido del nombre de nuestra variable. Para los nombres no debemos utilizar ni espacios ni caracteres especiales.</p>
 
-                    <p>Ejemplo 1: Mala practica</p>
-                    <img src="" alt="" srcset="">
-                    <p>Ejemplo 2: Forma correcta</p>
-                    <img src="" alt="" srcset="">
+                <article class=" clase__tema clase3__tema1">
+                    <div class="div--column">
+                        <h4>Ciclo FOR: Estatico y Dinamico</h4>
+                    <P>Un ciclo FOR es una estructura de control en JavaScript que se utiliza para repetir un bloque de código un número determinado de veces. Hay dos tipos de ciclos FOR: estáticos y dinámicos. Vamos a ver cada uno de ellos en detalle.</P>
+                    </div>
+                    <div class="div--column">
+                        <h4>Ciclo FOR estático:</h4>
+                        <p>Un ciclo FOR estático es aquel en el que el número de iteraciones es conocido de antemano y no cambia durante la ejecución del ciclo. Es decir, sabemos exactamente cuántas veces queremos que se ejecute el ciclo.</p>
+                        <p>Ejemplo 1: La sintaxis de un ciclo FOR estático es la siguiente</p>
+                        <img src="../img/clase3/ejemplo1.png" alt="" srcset="">
+                        <p>La inicialización es una expresión que se ejecuta al principio de cada iteración del ciclo. Por lo general, se utiliza para inicializar una variable que se utilizará como contador.</p>
+                        <p>La condición es una expresión que se evalúa en cada iteración. Si la condición se evalúa como verdadera, se ejecuta el código del ciclo. Si se evalúa como falsa, se sale del ciclo.</p>
+                        <p>La actualización es una expresión que se ejecuta al final de cada iteración. Por lo general, se utiliza para modificar el contador.</p>
+                        <p>Veamos un ejemplo de ciclo FOR estático:</p>
+                        <img src="../img/clase3/ejemplo2.png" alt="" srcset="">
+                        <p>En este ejemplo, el ciclo se ejecutará 10 veces, ya que la condición es "i < 10". En cada iteración, se imprimirá el valor de "i" en la consola y luego se aumentará en 1 gracias a la actualización "i++".</p>
+                    </div>
+                   <div class="div--column">
+                        <h4>Ciclo FOR dinámico:</h4>
+                        <p>Un ciclo FOR dinámico es aquel en el que el número de iteraciones depende de los datos que estamos procesando. Es decir, no sabemos de antemano cuántas veces se ejecutará el ciclo.</p>
+                        <p>Para utilizar un ciclo FOR dinámico, debemos proporcionar una lista de datos y utilizar una variable para recorrerla elemento por elemento. La sintaxis es similar a la de un ciclo FOR estático, pero la condición y la actualización son ligeramente diferentes:</p>
+                        <p>La inicialización y la actualización son similares a las de un ciclo FOR estático. La diferencia principal está en la condición. En lugar de comprobar una condición fija, debemos comprobar si hemos llegado al final de la lista de datos.</p>
+                        <p>Veamos un ejemplo de ciclo FOR dinámico:</p>
+                        <img src="../img/clase3/ejemplo3.png" alt="">
+                        <p>En este ejemplo, el ciclo se ejecutará tantas veces como elementos tenga el array "datos". En cada iteración, se imprimirá el elemento correspondiente del array en la consola y luego se aumentará el contador "i" en 1 gracias a la actualización "i++".</p>
+                   </div>
                 </article>
-                <article class="clase__tema">
-                    <h4>Consola</h4>
-                    <P>La sentencia console.log() muestra el mensaje que pasemos como parámetro a la llamada en la consola JavaScript del Navegador web.</P>
-                    <p>Específicamente, console.log brinda un tratamiento especial a los elementos del DOM, mientras que console.dir no. Esto es útil a menudo cuando intentas ver la representación completa del objeto JavaScript del DOM.</p>
-                    <p>Ejemplo 1:</p>
-                    <img src="" alt="">
-                    <p>Ejemplo 2:</p>
-                    <img src="" alt="">
+
+
+                <article class="clase__tema clase3__tema2">
+                    <div class="div--column">
+                        <h4>Ciclo WHILE:</h4>
+                        <P>Un ciclo WHILE es una estructura de control en JavaScript que se utiliza para repetir un bloque de código mientras se cumpla una determinada condición. La sintaxis de un ciclo WHILE es la siguiente:</P>
+                        <img src="../img/clase3/ejemplo4.png" alt="">
+                        <p>La condición es una expresión que se evalúa al principio de cada iteración. Si la condición se evalúa como verdadera, se ejecuta el código del ciclo. Si se evalúa como falsa, se sale del ciclo.</p>
+                        <p>Veamos un ejemplo de ciclo WHILE:</p>
+                        <img src="../img/clase3/ejemplo5.png" alt="">
+                        <p>En este ejemplo, el ciclo se ejecutará 10 veces, ya que la condición es "i < 10". En cada iteración, se imprimirá el valor de "i" en la consola y luego se aumentará en 1 gracias a la expresión "i++".</p>
+                        <p>Un ciclo WHILE es útil cuando no sabemos de antemano cuántas veces queremos que se ejecute el código. Por ejemplo, podemos utilizar un ciclo WHILE para leer líneas de un archivo hasta que se encuentre una línea en blanco.</p>
+                    </div>
+                    <div class="div--column">
+                        <h4>Ciclo DO...WHILE:</h4>
+                        <p>Un ciclo DO...WHILE es similar a un ciclo WHILE, pero con una diferencia importante: el código se ejecuta al menos una vez, independientemente de si se cumple la condición o no. La sintaxis de un ciclo DO...WHILE es la siguiente:</p>
+                        <img src="../img/clase3/ejemplo6.png" alt="">
+                        <p>La condición se evalúa al final de cada iteración, por lo que el código se ejecuta al menos una vez antes de comprobar la condición. Si la condición se evalúa como verdadera, se vuelve a ejecutar el código del ciclo. Si se evalúa como falsa, se sale del ciclo.</p>
+                        <p>Veamos un ejemplo de ciclo DO...WHILE:</p>
+                        <img src="../img/clase3/ejemplo7.png" alt="">
+                        <p>En el ejemplo anterior, el ciclo se ejecutará 10 veces, ya que la condición es "i < 10". En cada iteración, se imprimirá el valor de "i" en la consola y luego se aumentará en 1 gracias a la expresión "i++".</p>
+                        <p>Un ciclo DO...WHILE es útil cuando queremos asegurarnos de que el código se ejecute al menos una vez. Por ejemplo, podemos utilizar un ciclo DO...WHILE para pedir al usuario que ingrese un número válido hasta que lo haga.</p>
+                        <p>En resumen, un ciclo WHILE se utiliza para repetir un bloque de código mientras se cumpla una determinada condición, mientras que un ciclo DO...WHILE se utiliza para repetir un bloque de código al menos una vez y luego continuar mientras se cumpla una determinada condición.</p>
+                    </div>
                 </article>
-                <article class="clase__tema">
-                    <h4>Datos Primitivos: Number y String</h4>
-                    <P>Podemos asociar distintos valores a una variable en JavaScript. Para empezar trabajaremos con los tipos de datos más comunes, los cuales son las cadenas de texto y los números</P>
-                    <p><span>Number: </span>un valor numérico puede ser entero o decimal.</p>
-                    <p><span>String: </span>por otro lado, un string o cadena de texto, es un valor compuesto por uno o más caracteres, definido entre comillas simples o dobles.</p>
-                    <p>Ejemplo de Number:</p>
-                    <img src="" alt="" srcset="">
-                    <p>Ejemplo de String:</p>
-                    <img src="" alt="" srcset="">
+
+
+                <article class="clase__tema clase3__tema3">
+                    <h4>Switch</h4>
+                    <p>SWITCH es una estructura de control en JavaScript que se utiliza para evaluar una expresión y ejecutar un bloque de código en función del resultado de la evaluación. La sintaxis de una estructura SWITCH es la siguiente:</p>
+                    <img src="../img/clase3/ejemplo8.png" alt="">
+                    <p>La expresión se evalúa y se compara con cada uno de los valores de los "case". Si se encuentra un valor que coincida con la expresión, se ejecuta el código correspondiente y se sale de la estructura SWITCH gracias a la sentencia "break". Si no se encuentra ningún valor que coincida, se ejecuta el código del "default".</p>
+                    <p>Veamos un ejemplo de estructura SWITCH:</p>
+                    <img src="../img/clase3/ejemplo9.png" alt="">
+                    <p>En este ejemplo, la expresión "dia" se evalúa y se compara con cada uno de los valores de los "case". Como "dia" es igual a "lunes", se ejecuta el código "console.log("Hoy es lunes");" y se sale de la estructura SWITCH.</p>
+                    <p>Una estructura SWITCH es útil cuando queremos evaluar una expresión y ejecutar distintos bloques de código en función de los posibles resultados de la evaluación. Por ejemplo, podemos utilizar una estructura SWITCH para determinar qué acción tomar en función de una opción seleccionada por el usuario.</p>
                 </article>
-                <article class="clase__tema">
-                    <h4>Operaciones Aritmeticas</h4>
-                    <P>Con variables de valores numéricos podes realizar operaciones matemáticas: sumas, restas, multiplicaciones, etc.</P>
-                    <p>Con variables de tipo string (texto) se puede concatenar los valores, es decir combinarlas.</p>
-                    <p>Ejemplo de operaciones con valores numericos</p>
-                    <img src="" alt="" srcset="">
-                    <p>Ejemplo de operaciones con  valores tipo string</p>
-                    <img src="" alt="" srcset="">
+
+
+                <article class="clase__tema clase3__tema4">
+                    <div class="div--column">
+                        <h4>Sentencia BREAK:</h4>
+                        <p>La sentencia BREAK es una sentencia de control en JavaScript que se utiliza para salir de un ciclo o de una estructura SWITCH. Cuando se ejecuta la sentencia BREAK, el ciclo o la estructura se detienen inmediatamente y el control del programa pasa a la línea de código siguiente.</p>
+                        <p>Veamos un ejemplo de cómo utilizar la sentencia BREAK en un ciclo:</p>
+                        <img src="../img/clase3/ejemplo10.png" alt="">
+                        <p>En este ejemplo, el ciclo se ejecutará hasta que "i" sea igual a 5. En ese momento, se ejecutará la sentencia BREAK y el ciclo se detendrá. Como resultado, se imprimirán los números del 0 al 4 en la consola.</p>
+                        <p>La sentencia BREAK es útil cuando queremos salir de un ciclo o de una estructura SWITCH de forma anticipada. Por ejemplo, podemos utilizar una sentencia BREAK para salir de un ciclo si encontramos el elemento que estamos buscando.</p>
+                    </div>
+                    <div class="div--column">
+                        <h4>Sentencia CONTINUE:</h4>
+                        <p>La sentencia continue también se utiliza para interrumpir la ejecución de un bloque de código, pero en lugar de salir del bloque completamente, sólo salta a la siguiente iteración del ciclo en el que se encuentra. Esto es útil cuando queremos saltear una o varias iteraciones de un ciclo cuando se cumple una condición específica.</p>
+                        <p>Veamos un ejemplo de cómo utilizar la sentencia CONTINUE en un ciclo:</p>
+                        <img src="../img/clase3/ejemplo11.png" alt="">
+                        <p>En este ejemplo, la sentencia continue se encuentra dentro de un ciclo for, y se ejecuta cuando i es un número par. Esto hace que el ciclo saltée la iteración actual y continúe con la siguiente, por lo que sólo se imprimen los números impares del 1 al 9.</p>
+                        <p>Es importante tener en cuenta que la sentencia continue sólo funciona dentro de ciclos, y no puede utilizarse dentro de un switch.</p>
+                    </div>
                 </article>
-                <article class="clase__tema">
-                    <h4>Prompt y Alert</h4>
-                    <P><span>Prormpt:</span>La sentencia  prompt() mostrará un cuadro de diálogo para que el usuario ingrese un dato. Se puede proporcionar un mensaje que se colocará sobre el campo de texto. El valor que devuelve es una cadena que representa lo que el usuario ingresó.</P>
-                    <p><span>Alert: </span>La sentencia alert() mostrará una ventana sobre la página web que estemos accediendo mostrando el mensaje que se pase como parámetro a la llamada.</p>
-                    <p>Ejemplo de Prompt</p>
-                    <img src="" alt="" srcset="">
-                    <p>Ejemplo de Alert</p>
-                    <img src="" alt="" srcset="">
-                </article>
-                <article class="clase__tema disabled">
-                    <h4>¿Cómo incluir JavaScript en tus proyectos?</h4>
-                    <P>Puedes incluir tu codigo JavaScript directamente en el archivo HTML con las etiquetas SCRIPT pero es considerado mala practica.</P>
-                    <p>La forma correcta es linkear tu codigo JavaScript justo antes de la etiqueta de cierre dle Body del HTML con las etiquetas SCRIPT agregando SRC para señalar la ruta
-                        en la que se encuentra tu archivo .js</p>
-                    <p>Ejemplo 1: Mala practica</p>
-                    <img src="" alt="" srcset="">
-                    <p>Ejemplo 2: Forma correcta</p>
-                    <img src="" alt="" srcset="">
-                </article>
+            </article>
         </section>
     </div>
     </main>

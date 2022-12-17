@@ -30,22 +30,16 @@
             <h2 class="clases__title">Consignas:</h2>
             <article class="clases__article">
                 <ol class="consignas__list">
-                    <li class="consignas__item">Crea una variable con el nombre mostrarMensaje y dale un valor true o false. Evalúe con una sentencia condicional su
-                        expresión lógica. Si es true, genere una mensaje en consola con la siguiente frase: "Bienvenido a mi web",
-                        en caso contrario, muestre en consola: "Usted no tiene acceso".</li>
-                    <li class="consignas__item">Crear una estructura condicional que evalúe si un número, alojado en una variable, es positivo. En el caso de que
-                        así sea, envíe un mensaje en consola con la siguiente frase: "Este número vibra alto", en el caso de que el número sea
-                        negativo, envie un mensaje en consola: "Este número es negativo".</li>
-                    <li class="consignas__item">Crear una estructura condicional que evalúe un número entre el 0 y el 10 y devuelva un string dependiendo de lo siguiente:
+                    <li class="consignas__item">
+                        Crear 4 funciones que reciban 2 parámetros numéricos de cualquier tipo, distinto a 0: (Para cada uno de los llamados de las funciones, pasar los dos argumentos numéricos y visualizar el retorno en consola.)
                         <ul>
-                            <li><span>Menor a 6:</span> Desaprobado</li>
-                            <li><span>Mayor o igual a 6 y menor a 7:</span> Regular</li>
-                            <li><span>Mayor 0 igual a 7 y menor a 8:</span>  Bueno</li>
-                            <li><span>Mayor o igual a entre 8 y menor a 10:</span> Muy Bueno</li>
-                            <li><span>Igual a 10:</span> Excelente</li>
-                            <li><span>Menor 0 o mayor a 10:</span> Puntaje inválido</li>
+                            <li>a) la función debe retornar la suma de los dos operandos</li>
+                            <li>b) la función debe retornar la resta de los dos opernados </li>
+                            <li>c) la función debe retornar la multiplicación de los dos operandos</li>
+                            <li>d) la función debe retornar la división de los dos operandos</li>
                         </ul>
                     </li>
+                    <li class="consignas__item">Crear una función que reciba los siguientes parámetros: nombre, apellido, edad, direccion y telefono. (Retornar como cadena de caracteres, la información del usuario. Podés usar \n para generar saltos de línea. Luego al llamar a la función, pase los 5 argumentos y visualice en consola el dato retornado.)</li>
                 </ol>
             </article>
         </section>
@@ -55,109 +49,94 @@
         <section class="clases__anotaciones">
             <h2 class="clases__title">Anotaciones:</h2>
             <article class="article__anotaciones">
-                <article class="anotaciones__temario">
+                <article class="anotaciones4__temario">
                     <h3 class="temario__title">Temario de la clase:</h3>
                     <ul class="temario__list">
-                        <li class="temario__item">¿Cómo incluir JavaScript en tus proyectos?</li>
-                        <li class="temario__item">Glosario básico: Script, Sentencia, Palabras Reservadas</li>
-                        <li class="temario__item">Sintaxis de JavaScript</li>
-                        <li class="temario__item">Declaración de variables: var, let y const</li>
-                        <li class="temario__item">Console.log</li>
-                        <li class="temario__item">Datos primitivos: Number y String</li>
-                        <li class="temario__item">Operaciones aritméticas</li>
-                        <li class="temario__item">Cuadros de diálogo: alert y prompt</li>
+                        <li class="temario__item">Funciones y propiedades basicas</li>
+                        <li class="temario__item">Scope</li>
+                        <li class="temario__item">Funciones anonimas</li>
+                        <li class="temario__item">Funciones Flecha</li>
                     </ul>
                 </article>
                 <article class="clase__tema">
-                    <h4>¿Cómo incluir JavaScript en tus proyectos?</h4>
-                    <P>Puedes incluir tu codigo JavaScript directamente en el archivo HTML con las etiquetas SCRIPT pero es considerado mala practica.</P>
-                    <p>La forma correcta es linkear tu codigo JavaScript justo antes de la etiqueta de cierre dle Body del HTML con las etiquetas SCRIPT agregando SRC para señalar la ruta
-                        en la que se encuentra tu archivo .js</p>
-                    <p>Ejemplo 1: Mala practica</p>
-                    <img src="" alt="" srcset="">
-                    <p>Ejemplo 2: Forma correcta</p>
-                    <img src="" alt="" srcset="">
+                    <div class="div--column">
+                        <h4>Funciones y propiedades basicas: </h4>
+                        <P>En JavaScript, una función es un bloque de código que se puede reutilizar varias veces. Las funciones tienen un nombre y pueden tener parámetros de entrada, también conocidos como argumentos. Las funciones se pueden llamar desde diferentes partes de un programa para ejecutar el código que contienen.</P>
+                        <p>Hay tres formas de declarar una función en JavaScript:</p>
+                        <p>Función declarativa: se declara con la palabra clave "function" seguida del nombre de la función y una lista de parámetros entre paréntesis, y se termina con un bloque de código entre llaves. Por ejemplo:</p>
+                        <img src="../img/clase4/ejemplo1.png" alt="" srcset="">
+                        <p>Función de expresión: se asigna a una variable y se puede usar como una función anónima. Por ejemplo:</p>
+                        <img src="../img/clase4/ejemplo2.png" alt="" srcset="">
+                        <p>Función de flecha: es una forma abreviada de escribir una función de expresión. Se escribe con la palabra clave "function" seguida de una flecha y un bloque de código entre llaves. Por ejemplo:</p>
+                        <img src="../img/clase4/ejemplo3.png" alt="">
+                    </div>
+                    <div class="div--column">
+                        <p>Las funciones también tienen propiedades y métodos especiales que se pueden utilizar para realizar tareas específicas. Algunas de estas propiedades y métodos incluyen:</p>
+                        <ul>
+                            <li>arguments: es un objeto que contiene una lista de los argumentos pasados a la función.</li>
+                            <li>call(): permite llamar a una función con un valor this específico y argumentos dados.</li>
+                            <li>apply(): permite llamar a una función con un valor this específico y un arreglo de argumentos.</li>
+                            <li>bind(): crea una nueva función con un valor this fijo y argumentos dados.</li>
+                            <li>length: devuelve la cantidad de argumentos que espera la función.</li>
+                            <li>name: devuelve el nombre de la función.</li>
+                        </ul>
+                        <p>Las funciones también pueden tener un valor de retorno, que es el valor que se devuelve cuando se llama a la función. Si una función no tiene una declaración de retorno explícita, se devuelve el valor undefined de forma predeterminada.</p>
+                    </div>
+                    
                 </article>
                 <article class="clase__tema">
                     <div class="div--column">
-                        <h4>¿Que es un script?</h4>
-                        <P>Un script es un programa que consta de definiciones de funciones, definiciones de variables y sentencias de programa ejecutable.</P>
+                        <h4>Scope: </h4>
+                        <P>En JavaScript, el scope hace referencia al alcance de una variable o función en un programa. Es decir, indica en qué partes del código se puede acceder a una variable o función y cómo se pueden utilizar.</P>
+                        <p>Hay dos tipos de scope en JavaScript: el scope global y el scope local.</p>
+                        <p>El scope global se refiere al alcance de una variable o función en todo el programa. Las variables y funciones declaradas fuera de cualquier función tienen un scope global y se pueden acceder desde cualquier parte del programa. Sin embargo, las variables declaradas con la palabra clave "var" tienen un scope global, incluso si se declaran dentro de una función. Por ejemplo:</p>
+                        <img src="../img/clase4/ejemplo4.png" alt="">
                     </div>
                     <div class="div--column">
-                        <h4>¿Que es un sentencia?</h4>
-                        <p>En un lenguaje de programación, una sentencia es una línea de código al mando de una tarea. Cada script/programa consiste en una secuencia de sentencias.</p>
+                        <p>El scope local se refiere al alcance de una variable o función dentro de una función específica. Las variables y funciones declaradas dentro de una función tienen un scope local y sólo se pueden acceder desde dentro de esa función. Por ejemplo:</p>
+                        <img src="../img/clase4/ejemplo5.png" alt="">
+                        <p>En JavaScript, también existen bloques de código que tienen un scope local, como los bucles "for" y las sentencias "if". Las variables declaradas dentro de estos bloques tienen un scope local y sólo se pueden acceder desde dentro del bloque. Por ejemplo:</p>
+                        <img src="../img/clase4/ejemplo6.png" alt="">
+                        <p>En JavaScript, también existe la palabra clave "let" para declarar variables. Las variables declaradas con "let" tienen un scope local y sólo se pueden acceder desde dentro del bloque en el que se declaran. Por ejemplo:</p>
+                        <img src="../img/clase4/ejemplo7.png" alt="">
+                        <p>Es importante tener en cuenta que el scope de una variable o función no se puede cambiar una vez que ha sido definido. Por ejemplo, si una variable tiene un scope global, no se puede convertir en una variable con scope local y viceversa.</p>
+                        <p>El concepto de scope es importante en JavaScript porque afecta a la forma en que se pueden utilizar las variables y funciones en un programa. Si una variable o función tiene un scope global, se puede acceder y utilizar desde cualquier parte del programa, lo que puede resultar útil para compartir datos o funcionalidades entre diferentes partes del código. Sin embargo, también puede resultar peligroso utilizar variables o funciones globales, ya que pueden ser modificadas o sobreescritas por cualquier parte del código, lo que puede causar errores o comportamientos inesperados.</p>
+                        <p>Por otro lado, si una variable o función tiene un scope local, sólo se puede acceder y utilizar desde dentro de la función o bloque en el que se declara, lo que puede ayudar a proteger la integridad de los datos y a evitar errores.</p>
+                        <p>En resumen, el scope en JavaScript es un concepto importante que determina el alcance y accesibilidad de las variables y funciones en un programa. Es importante tener en cuenta el scope de las variables y funciones al escribir código para evitar errores y asegurar una correcta ejecución del programa.</p>
+                    </div>
+                </article>
+                <article class="clase__tema">
+                    <div class="div--column">
+                        <h4>Funciones Anonimas</h4>
+                        <P>En JavaScript, una función anónima es una función sin un nombre. Las funciones anónimas se pueden utilizar para crear funciones "al vuelo" sin tener que asignarles un nombre. Las funciones anónimas se pueden usar en diferentes contextos y son muy útiles para crear funciones que se van a usar sólo una vez.</P>
+                        <p>Hay diferentes formas de declarar una función anónima en JavaScript, pero la forma más común es como una función de expresión:</p>
+                        <img src="../img/clase4/ejemplo8.png" alt="">
                     </div>
                     <div class="div--column">
-                        <h4>Palabras Reservadas</h4>
-                        <p>Una palabra reservada es una palabra que tiene un significado gramatical especial y no puede ser utilizada como un identificador de objetos en códigos del mismo, como pueden ser las variables.</p>
+                        <p>Otra forma de declarar una función anónima es usando la sintaxis de función de flecha:</p>
+                        <img src="../img/clase4/ejemplo9.png" alt="">
+                        <p>Las funciones anónimas también pueden tener parámetros de entrada, que se escriben entre paréntesis después del nombre de la función:</p>
+                        <img src="../img/clase4/ejemplo10.png" alt="">
+                        <p>Una vez que se ha declarado una función anónima, se puede utilizar de la misma forma que cualquier otra función, llamándola y pasando los argumentos necesarios:</p>
+                        <img src="../img/clase4/ejemplo11.png" alt="">
+                    </div>
+                    <div class="div--column">
+                        <p>Las funciones anónimas también se pueden utilizar como argumentos de otras funciones, como por ejemplo en el método "map()" de los arreglos, que aplica una función dada a cada elemento de un arreglo y devuelve un nuevo arreglo con los resultados:</p>
+                        <img src="../img/clase4/ejemplo12.png" alt="">
+                        <p>En resumen, las funciones anónimas son una forma útil de crear y utilizar funciones sin tener que asignarles un nombre. Se pueden utilizar en diferentes contextos y son muy útiles para crear funciones que se van a usar sólo una vez.</p>
                     </div>
                 </article>
                 <article class="clase__tema">
-                    <h4>Sintaxis de JavaScript</h4>
-                    <P><span>No se tienen en cuenta los espacios en blanco y las nuevas líneas: </span>como sucede con XHTML, el intérprete de JavaScript ignora cualquier espacio en blanco sobrante, por lo que el código se puede ordenar de forma adecuada para entenderlo mejor (tabulando las líneas, añadiendo espacios, creando nuevas líneas, etc.)</P>
-                    <p><span>Se distinguen las mayúsculas y minúsculas: </span>al igual que sucede con la sintaxis de las etiquetas y elementos XHTML. Sin embargo, si en una página XHTML se utilizan indistintamente mayúsculas y minúsculas, la página se visualiza correctamente, siendo el único problema la no validación de la página. En cambio, si en JavaScript se intercambian mayúsculas y minúsculas el script no funciona.</p>
-                    <p><span>No se define el tipo de las variables: </span>al crear una variable, no es necesario indicar el tipo de dato que almacenará. De esta forma, una misma variable puede almacenar diferentes tipos de datos durante la ejecución del script.</p>
-                    <p><span>No es necesario terminar cada sentencia con el carácter de punto y coma (;): </span>en la mayoría de lenguajes de programación, es obligatorio terminar cada sentencia con el carácter ;. Aunque JavaScript no obliga a hacerlo, es conveniente seguir la tradición de terminar cada sentencia con el carácter del punto y coma (;).</p>
-                    <p><span>Se pueden incluir comentarios: </span>los comentarios se utilizan para añadir información en el código fuente del programa. Aunque el contenido de los comentarios no se visualiza por pantalla, si que se envía al navegador del usuario junto con el resto del script, por lo que es necesario extremar las precauciones sobre la información incluida en los comentarios.</p>
-                </article>
-                <article class="clase__tema">
-                    <h4>Variables</h4>
-                    <P>Una variable es un espacio reservado en la memoria que, como su nombre indica, puede cambiar de contenido a lo largo de la ejecución de un programa. 
-                    En las variables almacenamos diversos tipos de datos que utilizamos en la aplicación.</P>
-                    <h4>Declaracion de Variables</h4>
-                    <p>Declarar una variable significa crearla. Para esto usamos la palabra reservada var, let o const. Escribimos una de estas palabras claves seguido del nombre de nuestra variable. Para los nombres no debemos utilizar ni espacios ni caracteres especiales.</p>
-
-                    <p>Ejemplo 1: Mala practica</p>
-                    <img src="" alt="" srcset="">
-                    <p>Ejemplo 2: Forma correcta</p>
-                    <img src="" alt="" srcset="">
-                </article>
-                <article class="clase__tema">
-                    <h4>Consola</h4>
-                    <P>La sentencia console.log() muestra el mensaje que pasemos como parámetro a la llamada en la consola JavaScript del Navegador web.</P>
-                    <p>Específicamente, console.log brinda un tratamiento especial a los elementos del DOM, mientras que console.dir no. Esto es útil a menudo cuando intentas ver la representación completa del objeto JavaScript del DOM.</p>
-                    <p>Ejemplo 1:</p>
-                    <img src="" alt="">
-                    <p>Ejemplo 2:</p>
-                    <img src="" alt="">
-                </article>
-                <article class="clase__tema">
-                    <h4>Datos Primitivos: Number y String</h4>
-                    <P>Podemos asociar distintos valores a una variable en JavaScript. Para empezar trabajaremos con los tipos de datos más comunes, los cuales son las cadenas de texto y los números</P>
-                    <p><span>Number: </span>un valor numérico puede ser entero o decimal.</p>
-                    <p><span>String: </span>por otro lado, un string o cadena de texto, es un valor compuesto por uno o más caracteres, definido entre comillas simples o dobles.</p>
-                    <p>Ejemplo de Number:</p>
-                    <img src="" alt="" srcset="">
-                    <p>Ejemplo de String:</p>
-                    <img src="" alt="" srcset="">
-                </article>
-                <article class="clase__tema">
-                    <h4>Operaciones Aritmeticas</h4>
-                    <P>Con variables de valores numéricos podes realizar operaciones matemáticas: sumas, restas, multiplicaciones, etc.</P>
-                    <p>Con variables de tipo string (texto) se puede concatenar los valores, es decir combinarlas.</p>
-                    <p>Ejemplo de operaciones con valores numericos</p>
-                    <img src="" alt="" srcset="">
-                    <p>Ejemplo de operaciones con  valores tipo string</p>
-                    <img src="" alt="" srcset="">
-                </article>
-                <article class="clase__tema">
-                    <h4>Prompt y Alert</h4>
-                    <P><span>Prormpt:</span>La sentencia  prompt() mostrará un cuadro de diálogo para que el usuario ingrese un dato. Se puede proporcionar un mensaje que se colocará sobre el campo de texto. El valor que devuelve es una cadena que representa lo que el usuario ingresó.</P>
-                    <p><span>Alert: </span>La sentencia alert() mostrará una ventana sobre la página web que estemos accediendo mostrando el mensaje que se pase como parámetro a la llamada.</p>
-                    <p>Ejemplo de Prompt</p>
-                    <img src="" alt="" srcset="">
-                    <p>Ejemplo de Alert</p>
-                    <img src="" alt="" srcset="">
-                </article>
-                <article class="clase__tema disabled">
-                    <h4>¿Cómo incluir JavaScript en tus proyectos?</h4>
-                    <P>Puedes incluir tu codigo JavaScript directamente en el archivo HTML con las etiquetas SCRIPT pero es considerado mala practica.</P>
-                    <p>La forma correcta es linkear tu codigo JavaScript justo antes de la etiqueta de cierre dle Body del HTML con las etiquetas SCRIPT agregando SRC para señalar la ruta
-                        en la que se encuentra tu archivo .js</p>
-                    <p>Ejemplo 1: Mala practica</p>
-                    <img src="" alt="" srcset="">
-                    <p>Ejemplo 2: Forma correcta</p>
-                    <img src="" alt="" srcset="">
+                    <h4>Funciones Flecha</h4>
+                    <P>Las funciones flecha son una forma abreviada de escribir una función en JavaScript. Se escriben con la palabra clave "function" seguida de una flecha y un bloque de código entre llaves. Por ejemplo:</P>
+                    <img src="../img/clase4/ejemplo13.png" alt="">
+                    <p>Las funciones flecha tienen algunas características y ventajas únicas en comparación con las funciones declarativas y de expresión tradicionales:</p>
+                    <ul>
+                        <li>No tienen un nombre: las funciones flecha no tienen un nombre asignado, lo que las convierte en funciones anónimas. Esto puede ser útil para crear funciones que se van a usar sólo una vez.</li>
+                        <li>No tienen un valor de "this": las funciones flecha tienen un valor de "this" que está ligado al contexto en el que se declaran, lo que las hace más fáciles de usar en contextos donde el valor de "this" puede cambiar.</li>
+                        <li>Son más cortas: la sintaxis de las funciones flecha es más corta que la de las funciones declarativas o de expresión tradicionales, lo que las hace más legibles y fáciles de escribir.</li>
+                        <li>No pueden ser usadas como constructoras: las funciones flecha no pueden ser usadas como constructoras con la palabra clave "new", lo que significa que no se pueden usar para crear nuevos objetos con el operador "new".</li>
+                    </ul>
                 </article>
         </section>
     </div>
