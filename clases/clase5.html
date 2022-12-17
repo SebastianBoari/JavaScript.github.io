@@ -4,11 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Clase 5: Objetos</title>
 </head>
+
 <body>
-    
+
+<div class="bg1">
+    <header id="header__clases">
+        <nav class="clases__nav">
+            <figure class="nav__logo">
+                <a href="../index.html"><img class="logo__img" src="../img/jslogo.webp" alt=""></a>
+            </figure>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
+                <li class="nav__item"><a class="nav__link" href="../clases/">Clase Anterior</a></li>
+                <li class="nav__item"><a class="nav__link" href="../clases/">Clase Siguiente</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<main id="clases__main">
+    <div class="bg2">
+        <section class="clases__anotaciones">
+            <h2 class="clases__title">Anotaciones:</h2>
+            <article class="article__anotaciones">
+                <article class="anotaciones5__temario">
+                    <h3 class="temario__title">Temario de la clase:</h3>
+                    <ul class="temario__list">
+                        <li class="temario__item">Objetos</li>
+                        <li class="temario__item">Constructores</li>
+                        <li class="temario__item">Metodos y Operaciones</li>
+                        <li class="temario__item">Clases</li>
+                    </ul>
+                </article>
+                <article class="clase__tema clase5__tema1">
+                    <div class="div--column">
+                        <h4>Funciones constructoras: </h4>
+                        <P>Una función constructora es un tipo de función especial en JavaScript que se utiliza para crear y inicializar objetos. Cuando se llama a una función constructora con la palabra clave new, se crea un nuevo objeto y se le asigna el prototipo de la función constructora. Además, la función constructora se ejecuta con el nuevo objeto como su contexto de ejecución (es decir, el valor de this dentro de la función es el nuevo objeto).</p>
+                        <p>Para crear una función constructora, se debe utilizar la palabra clave function seguida de un nombre de función (que debe comenzar con una letra mayúscula) y una lista de parámetros entre paréntesis. A continuación, se escribe el cuerpo de la función, que suele incluir la inicialización de las propiedades del nuevo objeto. Por ejemplo:</p>
+                        <img src="../img/clase5/ejemplo1.png" alt="" srcset="">
+                        <p>Para utilizar una función constructora, se debe llamar a la función con la palabra clave new. Esto creará un nuevo objeto y ejecutará la función constructora con ese objeto como su contexto de ejecución. A continuación, se pueden utilizar las propiedades y métodos del objeto creado. Por ejemplo:</p>
+                        <img src="../img/clase5/ejemplo2.png" alt="" srcset="">
+                        <p>Una de las principales ventajas de las funciones constructoras es que permiten crear objetos personalizados que comparten un conjunto común de propiedades y métodos. Por ejemplo, podríamos crear una función constructora para crear objetos Person que tienen un nombre y una edad, y luego utilizar esa función constructora para crear diferentes personas con diferentes valores para esas propiedades:</p>
+                        <img src="../img/clase5/ejemplo3.png" alt="">
+                        <p>Además de las propiedades y métodos que se definen en el cuerpo de la función constructora, los objetos creados por una función constructora también heredan las propiedades y métodos del prototipo de la función constructora.</p>
+                        <p>Una vez que se ha creado una función constructora, es posible crear métodos para los objetos creados por esa función de dos maneras diferentes: agregándolos al prototipo de la función constructora o agregándolos directamente al objeto creado.</p>
+                        <p>Para agregar un método al prototipo de una función constructora, se puede utilizar la sintaxis siguiente:</p>
+                        <img src="../img/clase5/ejemplo4.png" alt="">
+                        <p>De esta manera, todos los objetos creados a partir de la función constructora Person heredarán el método greet. Por ejemplo:</p>
+                        <img src="../img/clase5/ejemplo5.png" alt="">
+                        <p>Para agregar un método directamente a un objeto creado por una función constructora, se puede utilizar la sintaxis siguiente:</p>
+                        <img src="../img/clase5/ejemplo6.png" alt="">
+                        <p>De esta manera, el objeto person1 tendrá el método sayHi, pero el objeto person2 no lo tendrá.</p>
+                    </div>
+                    <div class="div--column">
+                        <p>JavaScript fue creado en 1995 por Netscape, y las funciones constructoras se han podido utilizar desde entonces. Sin embargo, con el tiempo se han ido introduciendo nuevas características y mejoras en JavaScript, y es posible que algunos de los detalles de su implementación hayan cambiado a lo largo de los años.</p>
+                    </div>
+                </article>
+
+                <article class="clase__tema clase5__tema2">
+                    <div class="div--column">
+                        <h4>Objetos: </h4>
+                        <P>Los objetos en JavaScript son una de las características más importantes y versátiles de este lenguaje de programación. Un objeto es una colección de propiedades, cada una de las cuales tiene un nombre y un valor, y puede ser de cualquier tipo de dato (incluso otro objeto). Los objetos en JavaScript son dinámicos y pueden ser modificados en tiempo de ejecución, lo que los hace muy útiles para almacenar y manipular datos.</P>
+                        <p>Una de las formas más comunes de crear objetos en JavaScript es utilizando la notación literal de objetos. Para crear un objeto vacío, se escriben dos llaves vacías seguidas:</p>
+                        <img src="../img/clase5/ejemplo7.png" alt="">
+                        <p>Para agregar propiedades a un objeto, se escribe el nombre de la propiedad seguido de dos puntos y el valor de la propiedad. Por ejemplo:</p>
+                        <img src="../img/clase5/ejemplo8.png" alt="">
+                        <p>Las propiedades de un objeto se pueden acceder utilizando la notación de punto o la notación de corchetes. La notación de punto se utiliza para acceder a propiedades cuyo nombre es una palabra clave válida en JavaScript. Por ejemplo:</p>
+                        <img src="../img/clase5/ejemplo9.png" alt="">
+                        <p>La notación de corchetes se utiliza para acceder a propiedades cuyo nombre no es una palabra clave válida en JavaScript o para acceder a propiedades cuyo nombre es dinámico (es decir, se determina en tiempo de ejecución). Por ejemplo:</p>
+                        <img src="../img/clase5/ejemplo10.png" alt="">
+                        <p>Además de almacenar valores, las propiedades de un objeto también pueden ser funciones, que se conocen como métodos. Por ejemplo:</p>
+                        <img src="../img/clase5/ejemplo11.png" alt="">
+                        <p>Una de las características más útiles de los objetos en JavaScript es la capacidad de crear objetos que heredan de otros objetos a través del uso de la palabra clave Object.create(). Esta función toma como argumento un objeto del que se quiere crear una nueva instancia y devuelve un nuevo objeto que hereda de ese objeto. Por ejemplo:</p>
+                        <img src="../img/clase5/ejemplo12.png" alt="">
+                        <p>En este ejemplo, el objeto employee hereda de person, por lo que tiene acceso a sus propiedades y métodos. Sin embargo, también tiene sus propias propiedades y métodos adicionales.</p>
+                    </div>
+                </article>
+
+                <article class="clase__tema clase5__tema3">
+                    <div class="div--column">
+                        <h4>Objetos: Metodos y Operaciones</h4>
+                        <P>Una vez que se ha creado un objeto, es posible añadir, eliminar o modificar sus propiedades y métodos utilizando diversos métodos y operaciones. Algunos de los métodos y operaciones más comunes son:</p>
+                        <p>Object.defineProperty(): Este método permite definir una propiedad de un objeto de forma explícita. Se pueden establecer diversas opciones, como si la propiedad es enumerable o configurable, o si tiene un getter o un setter. Por ejemplo:</p>
+                        <img src="../img/clase5/ejemplo13.png" alt="">
+                        <p>Object.defineProperties(): Este método permite definir varias propiedades de un objeto de forma explícita. Es similar a Object.defineProperty(), pero acepta un objeto como argumento que contiene las propiedades y opciones que se quieren definir. Por ejemplo:</p>
+                        <img src="../img/clase5/ejemplo14.png" alt="">
+                        <p>Object.getOwnPropertyDescriptor(): Este método permite obtener la descripción de una propiedad de un objeto. La descripción incluye información sobre el valor, si es escribible, enumerable o configurable, y si tiene un getter o un setter. Por ejemplo:</p>
+                        <img src="../img/clase5/ejemplo15.png" alt="">
+                        <p>Object.getOwnPropertyDescriptors(): Este método permite obtener las descripciones de todas las propiedades de un objeto. Es similar a Object.getOwnPropertyDescriptor(), pero devuelve un objeto con todas las descripciones en lugar de una sola. Por ejemplo:</p>
+                        <img src="../img/clase5/ejemplo16.png" alt="">
+                        <p>Además de los métodos que he mencionado hasta ahora, existen muchos otros métodos y operaciones relacionados con los objetos en JavaScript. Algunos de ellos son:</p>
+                        <p>Object.keys(): Este método devuelve un array con los nombres de las propiedades enumerables de un objeto.</p>
+                        <p>Object.values(): Este método devuelve un array con los valores de las propiedades enumerables de un objeto.</p>
+                        <p>Object.entries(): Este método devuelve un array con arrays de clave-valor para las propiedades enumerables de un objeto.</p>
+                        <p>Object.assign(): Este método permite copiar las propiedades de uno o varios objetos a otro objeto. Es útil para crear un nuevo objeto a partir de varios objetos existentes.</p>
+                        <p>Object.freeze(): Este método congela un objeto, lo que significa que no se pueden añadir, eliminar o modificar sus propiedades. También se congela su prototipo, por lo que no se pueden añadir ni eliminar propiedades del prototipo. </p>
+                        <p><span>y muchos otros mas..</span></p>
+                    </div>
+                </article>
+
+                <article class="clase__tema clase5__tema4">
+                    <h4>Clases</h4>
+                    <P>Son una forma de organizar el código y crear objetos con un comportamiento y estado similares. Las clases se introdujeron en JavaScript en la versión ECMAScript 6 y son una forma más clara y concisa de crear objetos y heredar de otros objetos.</P>
+                    <p>Para crear una clase en JavaScript, se utiliza la palabra clave class seguida del nombre de la clase y un bloque de código que define las propiedades y métodos de la clase. Por ejemplo:</p>
+                    <img src="../img/clase5/ejemplo17.png" alt="">
+                    <p>En este ejemplo, la clase Person tiene dos propiedades: name y age, y un método greet(). La propiedad name y age se inicializan a través del constructor de la clase, que es un método especial que se ejecuta cuando se crea una nueva instancia de la clase.</p>
+                    <p>Para crear una nueva instancia de una clase, se utiliza la palabra clave new seguida del nombre de la clase y los argumentos necesarios para el constructor. Por ejemplo:</p>
+                    <img src="../img/clase5/ejemplo18.png" alt="">
+                    <p>Una vez que se ha creado una clase, es posible añadir nuevas propiedades y métodos a la clase o modificar los existentes. Por ejemplo:</p>
+                    <img src="../img/clase5/ejemplo19.png" alt="">
+                    <p>Las clases en JavaScript también pueden heredar de otras clases utilizando la palabra clave extends. Por ejemplo:</p>
+                    <img src="../img/clase5/ejemplo20.png" alt="">
+                </article>
+        </section>
+    </div>
+</main>
+
+<div class="bg1">
+    <footer id="js__footer">
+        <div class="footer__imgs">
+            <img class="img1" src="../img/jslogo.webp" alt="">
+            <a target="_blank" href="https://www.coderhouse.com/"><img class="img2" src="../img/logos_coderhouse.png" alt=""></a>
+        </div>
+        <div class="footer__descrip">
+            <p>Anotaciones, resumenes, consignas y practicas desarrolladas en el curso de JavaScript dictado en Coderhouse.</p> 
+        </div>
+    </footer>
+</div>
 
     <script src="../js/clase5.js"></script>
+
 </body>
 </html>
