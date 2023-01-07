@@ -264,4 +264,7 @@ function pasarPrimerLetraAMayus(array){
 
 pasarPrimerLetraAMayus(nombresSinMayus);
 
-
+// Nota:
+// Ejercicios propuestos por ChatGPT. 
+// Estos ejercicios no fueron corregidos por un profesor, pero como funcionan los tomo como bien hechos. Desconozco si alguno cuenta con alguna mala practica
+// o si alguno estaba pensado para resolverse con algua funcion de orden superior en especifico o algo por el estilo, los hice a mi parecer.
