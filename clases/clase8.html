@@ -4,10 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Clase 8: DOM</title>
 </head>
 <body>
+    <div id="ejemplo">
+        <div class="contenedor"></div>
+        <div id="caja"></div>
+    </div>
+    <div class="bg1">
+        <header id="header__clases">
+            <nav class="clases__nav">
+                <figure class="nav__logo">
+                    <a href="../index.html"><img class="logo__img" src="../img/jslogo.webp" alt=""></a>
+                </figure>
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../clases/">Clase Anterior</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../clases/">Clase Siguiente</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+        
+    <main id="clases__main">
+    
+    <div class="bg2">
+    <section class="clases__anotaciones">
+        <h2 class="clases__title">Anotaciones:</h2>
+        <article class="article__anotaciones">
+            <article class="anotaciones5__temario">
+                <h3 class="temario__title">Temario de la clase:</h3>
+                <ul class="temario__list">
+                    <li class="temario__item">DOM: Funcionamiento</li>
+                    <li class="temario__item">Acceso</li>
+                    <li class="temario__item">Nodos</li>
+                </ul>
+            </article>
+            <article class="clase__tema clase8__tema1">
+                <div class="div--column">
+                    <h4>DOM</h4>
+                    <p>El DOM (Modelo de Objeto del Documento) es una interfaz de programación de aplicaciones (API) para documentos HTML y XML. Proporciona una representación estructurada de un documento, permitiendo que los programas accedan a sus elementos y modifiquen su contenido y su estructura.</p>
+                    <p>El DOM representa un documento como un árbol de objetos, donde cada elemento del documento es un nodo en el árbol. Los nodos pueden tener hijos, que a su vez pueden tener hijos, y así sucesivamente. Esto permite que el DOM permita a los programas navegar y modificar fácilmente el contenido del documento.</p>
+                    <p>El DOM también proporciona una serie de métodos y propiedades que permiten a los programas acceder y modificar los elementos del documento de manera sencilla. Por ejemplo, se pueden usar métodos como getElementById para obtener un elemento específico del documento a partir de su ID, o se pueden usar métodos como createElement para crear nuevos elementos y agregarlos al documento.</p>
+                </div>
+            </article>
+    
+            <article class="clase__tema clase8__tema2">
+                <p><span>getElementById</span></p>
+                <p>El método getElementById permite acceder a un nodo del Document Object Model (DOM) a través de su identificador. Para usar este método, se debe pasar como argumento el identificador del nodo que se quiere seleccionar. Por ejemplo:</p>
+                <img src="../img/clase8/ejemplo1.png" alt="">
 
+                <p><span>getElementsByTagName</span></p>
+                <p>El método getElementsByTagName permite acceder a uno o varios nodos del DOM a través de su etiqueta HTML. Para usar este método, se debe pasar como argumento el nombre de la etiqueta que se quiere seleccionar. El método devuelve una lista de elementos (no un array), por lo que no se pueden usar métodos de array para iterar sobre ellos. Para iterar sobre la lista de elementos, se puede usar un bucle for. Por ejemplo:</p>
+                <img src="../img/clase8/ejemplo2.png" alt="">
+                
+                <p><span>getElementsByClassName</span></p>
+                <p>El método getElementsByClassName permite acceder a uno o varios nodos del DOM a través de su clase CSS. Para usar este método, se debe pasar como argumento el nombre de la clase que se quiere seleccionar. Este método devuelve una lista de elementos (no un array), aunque solo exista un elemento con la clase especificada. Como con el método getElementsByTagName, no se pueden usar métodos de array para iterar sobre la lista de elementos, pero se puede usar un bucle for para iterar sobre ellos. Por ejemplo:</p>
+                <img src="../img/clase8/ejemplo3.png" alt="">
+
+                <p><span>querySelector</span></p>
+                <p>El método querySelector permite acceder al primer nodo del DOM que coincida con un selector CSS específico. Para usar este método, se debe pasar como argumento el selector CSS que se quiere utilizar. Este método devuelve el primer elemento que coincida con el selector especificado, o null si no existe ningún elemento que coincida. Por ejemplo:</p>
+                <img src="../img/clase8/ejemplo4.png" alt="">
+
+                
+                <p><span>querySelectorAll</span></p>
+                <p>El método querySelectorAll es similar al método querySelector, pero en lugar de devolver solo el primer elemento que coincida con el selector CSS especificado, devuelve una lista de todos los elementos que coincidan. Como con los métodos getElementsByTagName y getElementsByClassName, este método devuelve una lista de elementos (no un array), por lo que no se pueden usar métodos de array para iterar sobre ellos. Sin embargo, se puede usar un bucle for para iterar sobre la lista. Por ejemplo:</p>
+                <img src="../img/clase8/ejemplo5.png" alt="">
+                <p>También puedes usar querySelectorAll para seleccionar elementos con una clase específica o con un id específico, siguiendo la sintaxis de selectores CSS. Por ejemplo:</p>
+                <img src="../img/clase8/ejemplo6.png" alt="">
+            </article>
+    
+            <article class="clase__tema clase8__tema3">
+                <p><span>createElement</span></p>
+                <p>El método createElement permite crear un nuevo elemento del DOM y asignarle una etiqueta específica. Para usar este método, se debe pasar como argumento la etiqueta del elemento que se quiere crear. Este método devuelve una referencia al elemento creado, que se puede guardar en una variable o usar inmediatamente. Por ejemplo:</p>
+                <img src="../img/clase8/ejemplo7.png" alt="">
+
+                <p><span>className</span></p>
+                <p>La propiedad className permite acceder o asignar la clase CSS de un elemento del DOM. Puedes obtener la clase actual de un elemento usando la sintaxis elemento.className, o asignarle una nueva clase usando la sintaxis elemento.className = 'nueva-clase'. Por ejemplo:</p>
+                <img src="../img/clase8/ejemplo8.png" alt="">
+
+                <p><span>textContent</span></p>
+                <p>La propiedad textContent permite acceder o asignar el contenido de texto de un elemento del DOM. Puedes obtener el contenido actual de un elemento usando la sintaxis elemento.textContent, o asignarle un nuevo contenido usando la sintaxis elemento.textContent = 'nuevo contenido'. Por ejemplo:</p>
+                <img src="../img/clase8/ejemplo9.png" alt="">
+                <p>También puedes modificar el contenido de texto de todos los elementos de una colección HTMLCollection usando un bucle for que itere sobre los elementos de la colección. Por ejemplo:</p>
+                <img src="../img/clase8/ejemplo10.png" alt="">
+            </article>
+    
+            <article class="clase__tema clase8__tema4">
+                <p><span>append</span></p>
+                <p>El método append permite añadir un nodo o contenido de texto a otro nodo del DOM. Para usar este método, se debe pasar como argumento el nodo o el contenido de texto que se quiere añadir. Este método se utiliza generalmente para añadir contenido de texto, pero también se puede usar para añadir nodos completos. Por ejemplo:</p>
+                <img src="../img/clase8/ejemplo11.png" alt="">
+
+                <p><span>appendChild</span></p>
+                <p>El método appendChild permite añadir un nodo a otro nodo del DOM como hijo. Para usar este método, se debe pasar como argumento el nodo que se quiere añadir. Este método no acepta contenido de texto, solo acepta nodos de etiqueta. Por ejemplo:</p>
+                <img src="../img/clase8/ejemplo12.png" alt="">
+
+                <p><span>textContent</span></p>
+                <p>La propiedad textContent permite acceder o asignar el contenido de texto de un elemento del DOM. Puedes obtener el contenido actual de un elemento usando la sintaxis elemento.textContent, o asignarle un nuevo contenido usando la sintaxis elemento.textContent = 'nuevo contenido'. Por ejemplo:</p>
+                <img src="../img/clase8/ejemplo13.png" alt="">
+                <p>También puedes modificar el contenido de texto de todos los elementos de una colección HTMLCollection usando un bucle for que itere sobre los elementos de la colección.</p>
+            </article>
+        </article>
+    </section>
+    </div>
+    </main>
+        
+    <div class="bg1">
+        <footer id="js__footer">
+            <div class="footer__imgs">
+                <img class="img1" src="../img/jslogo.webp" alt="">
+                <a target="_blank" href="https://www.coderhouse.com/"><img class="img2" src="../img/logos_coderhouse.png" alt=""></a>
+            </div>
+            <div class="footer__descrip">
+                <p>Anotaciones, resumenes, consignas y practicas desarrolladas en el curso de JavaScript dictado en Coderhouse.</p> 
+            </div>
+        </footer>
+    </div>
+        
+    
 
 
     <script src="../js/clase8.js"></script>

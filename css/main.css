@@ -75,7 +75,7 @@ header {
   grid-row-gap: 64px; }
   #js__main h2 {
     padding: 32px;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #222222;
     font-size: 42px;
     color: #f7df1e; }
   #js__main .clases1a16 {
@@ -93,7 +93,7 @@ header {
       gap: 32px;
       padding: 64px;
       min-height: 460px;
-      background-color: rgba(0, 0, 0, 0.9);
+      background-color: #222222;
       transition: all .8s; }
       #js__main .clases1a16 .clases .clases__title {
         font-size: 32px;
