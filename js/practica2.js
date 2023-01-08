@@ -448,7 +448,7 @@ function reverseWordsOp2(string) {
 
     // hago que el ciclo for empiece por el final (googleado obvio porque no me la sabia esa xd)
     // Y con el unsift pusheamos cada palabra al nuevo array que habia declarado mas arriba
-    for (let i = words.length - 1; i >= 0; i--) {
+    for (let i = palabras.length - 1; i >= 0; i--) {
       palabrasInvertidas.unshift(palabras[i]);
     }
 
@@ -460,15 +460,63 @@ console.log(reverseWordsOp2(textoGeografiaArgentina));
   
 // 7- Crea una función llamada sortByLength que tome como argumento un array de cadenas de texto y devuelva el array ordenado de mayor a menor longitud de cadena. Por ejemplo, sortByLength(['Hola', 'Mundo', 'Adiós']) debería devolver ['Adiós', 'Mundo', 'Hola'].
 
-function sortByLength(array){
-    array.forEach()
+function sortByLength(array) {
+    // Primero, ordena el array de manera que los elementos con mayor longitud estén al principio
+    array.sort((a, b) => b.length - a.length);
+    return array;
 };
+  
+console.log(sortByLength(arrayDePalabras));
 
 // 8- Crea una función llamada sortByLastLetter que tome como argumento un array de cadenas de texto y devuelva el array ordenado por la última letra de cada cadena. Por ejemplo, sortByLastLetter(['Hola', 'Mundo', 'Adiós']) debería devolver ['Mundo', 'Hola', 'Adiós'].
+// No entendi la consigna
 
 // 9- Crea una función llamada palindrome que tome como argumento una cadena de texto y devuelva true si la cadena es un palíndromo (es decir, si se lee igual de izquierda a derecha que de derecha a izquierda) y false en caso contrario. Por ejemplo, palindrome('anilina') debería devolver true.
 
+function palindrome(string) {
+    // Divide la cadena en un array de caracteres, luego invierte el orden de los caracteres y vuelve a unir la cadena
+    let invertido = string.split('').reverse().join('');
+    
+    // Compara la cadena original con su inverso
+    return string === invertido;
+};
+
+console.log(palindrome('anilina'));
+console.log(palindrome('hola'));
+
 // 10- Crea una función llamada findDuplicates que tome como argumento un array de números y devuelva otro array con los números que se repiten en el array original. Por ejemplo, findDuplicates([1, 2, 3, 2, 3, 4, 5, 3]) debería devolver [2, 3].
+
+function findDuplicates(array) {
+    const duplicados = [];
+    for (let i = 0; i < array.length; i++) {
+      const currentNumber = array[i];
+      for (let j = i + 1; j < array.length; j++) {
+        if (currentNumber === array[j]) {
+          if (!duplicados.includes(currentNumber)) {
+            duplicados.push(currentNumber);
+          }
+        }
+      }
+    }
+
+    return duplicados;
+};
+  
+console.log(findDuplicates([1, 2, 3, 2, 3, 4, 5, 3]));  
 
 // 11- Crea una función llamada findLargest que tome como argumento un array de arrays de números y devuelva el número más grande de todos los arrays. Por ejemplo, findLargest([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) debería devolver 9.
 
+function findLargest(array) {
+    let elMasGrande= array[0][0];
+    for (let i = 0; i < array.length; i++) {
+      for (let j = 0; j < array[i].length; j++) {
+        if (array[i][j] > elMasGrande) {
+          elMasGrande = array[i][j];
+        }
+      }
+    }
+    
+    return elMasGrande;
+};
+
+console.log(findLargest([[1, 2, 3], [4, 5, 6], [7, 8, 9]]));
