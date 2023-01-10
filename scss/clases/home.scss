@@ -50,6 +50,57 @@
                 color: rgba(247, 223, 30, 1);
             }
         }
+        .practicas{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            .clases__title{
+                border-bottom: solid 4px rgba(247, 223, 30, 1);
+                padding-bottom: 48px;
+            }
+            p{
+                line-height: 42px;
+                font-size: 20px;
+                color: white;
+            }
+        }
+        .proyecto{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            #proyecto-final{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                .clases--right{
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: space-between;
+                    .clases__title{
+                        border-bottom: solid 4px rgba(247, 223, 30, 1);
+                        padding-bottom: 48px;
+                    }
+                    p{
+                        line-height: 42px;
+                        font-size: 22px;
+                        color: white;
+                    }
+                }
+
+
+                .clases--left{
+                    display: flex;
+                    flex-flow: column;
+                    gap: 64px;
+                    h4{
+                        font-size: 32px;
+                        color: white;
+                    }
+                    #img-proyecto{
+                        width: 300px;
+                    }
+                }
+            }
+            
+        }
+
         .clases:hover{
             background-color: rgb(0, 0, 0);
         }

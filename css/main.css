@@ -121,6 +121,42 @@ header {
         border: solid 2px #f7df1e;
         background-color: black;
         color: #f7df1e; }
+    #js__main .clases1a16 .practicas {
+      grid-column-start: 1;
+      grid-column-end: 4; }
+      #js__main .clases1a16 .practicas .clases__title {
+        border-bottom: solid 4px #f7df1e;
+        padding-bottom: 48px; }
+      #js__main .clases1a16 .practicas p {
+        line-height: 42px;
+        font-size: 20px;
+        color: white; }
+    #js__main .clases1a16 .proyecto {
+      grid-column-start: 1;
+      grid-column-end: 4; }
+      #js__main .clases1a16 .proyecto #proyecto-final {
+        display: grid;
+        grid-template-columns: 1fr 1fr; }
+        #js__main .clases1a16 .proyecto #proyecto-final .clases--right {
+          display: flex;
+          flex-flow: column;
+          justify-content: space-between; }
+          #js__main .clases1a16 .proyecto #proyecto-final .clases--right .clases__title {
+            border-bottom: solid 4px #f7df1e;
+            padding-bottom: 48px; }
+          #js__main .clases1a16 .proyecto #proyecto-final .clases--right p {
+            line-height: 42px;
+            font-size: 22px;
+            color: white; }
+        #js__main .clases1a16 .proyecto #proyecto-final .clases--left {
+          display: flex;
+          flex-flow: column;
+          gap: 64px; }
+          #js__main .clases1a16 .proyecto #proyecto-final .clases--left h4 {
+            font-size: 32px;
+            color: white; }
+          #js__main .clases1a16 .proyecto #proyecto-final .clases--left #img-proyecto {
+            width: 300px; }
     #js__main .clases1a16 .clases:hover {
       background-color: black; }
 
