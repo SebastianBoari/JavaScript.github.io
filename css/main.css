@@ -569,3 +569,12 @@ header {
 
 .clase7__tema1 {
   order: 2; }
+
+#ejemplo {
+  display: none; }
+  #ejemplo #tarjeta .corazon {
+    font-size: 80px; }
+  #ejemplo #tarjeta .rojo {
+    color: red; }
+  #ejemplo #tarjeta .negro {
+    color: black; }

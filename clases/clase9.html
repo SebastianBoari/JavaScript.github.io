@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Clase 9: Eventos</title>
+</head>
+
+<body>
+
+<div id="ejemplo">
+    <!-- Podemos añadir eventos como atributos. Esto es una mala practica. -->
+<button onclick="alert('Efectivamente, haz hecho click')">
+    Haz click
+</button>
+
+<div id="tarjeta">
+    <img src="../img/jslogo.webp" alt="">
+    <p class="corazon">♥</p>
+</div>
+
+</div>
+
+
+<div class="bg1">
+    <header id="header__clases">
+        <nav class="clases__nav">
+            <figure class="nav__logo">
+                <a href="../index.html"><img class="logo__img" src="../img/jslogo.webp" alt=""></a>
+            </figure>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
+                <li class="nav__item"><a class="nav__link" href="../clases/">Clase Anterior</a></li>
+                <li class="nav__item"><a class="nav__link" href="../clases/">Clase Siguiente</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+        
+<main id="clases__main">
+    <div class="bg2">
+        <section class="clases__anotaciones">
+            <h2 class="clases__title">Anotaciones:</h2>
+            <article class="article__anotaciones">
+                <article class="anotaciones5__temario">
+                    <h3 class="temario__title">Temario de la clase:</h3>
+                    <ul class="temario__list">
+                        <li class="temario__item">Eventos en JS</li>
+                        <li class="temario__item">Como definirlos</li>
+                        <li class="temario__item">Eventos mas comunes</li>
+                    </ul>
+                </article>
+                <article class="clase__tema clase9__tema1">
+                    <div class="div--column">
+                        <h4>Que es un evento en JS?</h4>
+                        <p>En JavaScript, un evento es una acción o suceso que ocurre en el navegador, como un clic en un botón, la carga de una página, o la acción de escribir en un campo de texto. Los eventos son una característica importante de la programación en JavaScript ya que nos permiten crear páginas web interactivas e intuitivas.</p>
+                        <p>Para manejar eventos en JavaScript, se utilizan los event handlers (manejadores de eventos). Un event handler es una función de JavaScript que se ejecuta cuando ocurre un evento específico. Por ejemplo, si queremos ejecutar una función cuando se haga clic en un botón, podemos asignar esa función como event handler del evento "click" del botón.</p>
+                    </div>
+                    <div class="div--column">
+                        <p>Hay varias formas de asignar event handlers a un elemento en JavaScript, incluyendo:</p>
+                        <ul>
+                            <li>Usando atributos HTML específicos, como onclick o onload</li>
+                            <li>Usando el método addEventListener de JavaScript, el cual permite agregar varios event handlers a un mismo elemento y es compatible con todos los navegadores modernos.</li>
+                        </ul>
+                    </div>
+                    <div class="div--column">
+                        <p>Un ejemplo de como utilizar el addEventListener:</p>
+                        <img src="../img/clase9/ejemplo1.png" alt="">
+                        <p>En este ejemplo, se está asignando la función anónima function(){ alert("Button was clicked!"); } como event handler del evento "click" del botón con ID "myBtn". Cuando se haga clic en ese botón, se ejecutará esa función y se mostrará una alerta en pantalla.</p>
+                        <p>Hay muchos eventos diferentes que pueden ser manejados en JavaScript, y puedes utilizarlos para crear aplicaciones web muy interactivas. Cualquier cosa desde un simple clic en un botón hasta un cambio en el tamaño de la ventana o una acción de teclado puede ser detectada y manejada mediante eventos en JavaScript.</p>
+                    </div>
+                </article>
+        
+                <article class="clase__tema clase9__tema2">
+                    <div class="div--column">
+                        <h4>Como declarar un evento en JavaScript?</h4>
+                        <p><span>Usando atributos HTML específicos:</span>  Puedes declarar un evento en JavaScript utilizando atributos HTML específicos, como onclick, onload, onmouseover, etc. Este enfoque es fácil de usar, pero no es recomendado debido a que mezcla el código de JavaScript con el HTML.</p>
+                        <img src="../img/clase9/ejemplo2.png" alt="">
+                        <p><span>Usando la propiedad on*:</span> Puedes declarar un evento en JavaScript utilizando la propiedad on* del elemento HTML. Esta forma es similar a usar atributos HTML específicos, pero permite separar el código de JavaScript del HTML.</p>
+                        <img src="../img/clase9/ejemplo3.png" alt="">
+                        <p><span>Usando el método addEventListener:</span> Este es el enfoque recomendado para declarar eventos en JavaScript. El método addEventListener permite asignar múltiples event handlers a un mismo elemento y es compatible con todos los navegadores modernos.</p>
+                        <img src="../img/clase9/ejemplo4.png" alt="">
+                        <p>El metodo addEventListener es el más recomendado y el que permite mayor flexibilidad. Sin embargo, es importante que tengas en cuenta la compatibilidad con los navegadores y lo que más te acomode a tus necesidades</p>
+                    </div>
+                </article>
+            </article>
+        </section>
+    </div>
+</main>
+        
+<div class="bg1">
+    <footer id="js__footer">
+        <div class="footer__imgs">
+            <img class="img1" src="../img/jslogo.webp" alt="">
+            <a target="_blank" href="https://www.coderhouse.com/"><img class="img2" src="../img/logos_coderhouse.png" alt=""></a>
+        </div>
+        <div class="footer__descrip">
+            <p>Anotaciones, resumenes, consignas y practicas desarrolladas en el curso de JavaScript dictado en Coderhouse.</p> 
+        </div>
+    </footer>
+</div>
+    
+
+
+
+    <script src="../js/clase9.js"></script>
+</body>
+</html>

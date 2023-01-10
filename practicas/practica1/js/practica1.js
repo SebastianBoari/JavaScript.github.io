@@ -1,5 +1,73 @@
 // Actividades practicas de repaso a clases anteriores: 
 
+
+
+
+// 1- Escribe una función que tome dos números y devuelva la suma de ellos.
+
+// 2- Escribe una función que tome un número y devuelva su valor absoluto.
+
+// 3- Escribe una función que tome una cadena de texto y devuelva la cantidad de palabras que contiene.
+
+// 4- Escribe una función que tome una cadena de texto y devuelva la palabra más larga de la cadena.
+
+// 5- Escribe una función que tome una lista de números y devuelva el mayor de todos ellos.
+
+// 6- Escribe una función que tome una lista de números y devuelva el menor de todos ellos.
+
+// 7- Escribe una función que tome un número y devuelva true si es par, o false si es impar.
+
+// 8- Escribe una función que tome una lista de nombres y devuelva la cantidad de nombres que contiene.
+
+// 9- Escribe una función que tome una lista de nombres y devuelva la lista de nombres en orden alfabético.
+
+// 10- Escribe una función que tome una lista de números y devuelva una nueva lista con todos los números a la potencia de 2.
+
+// 11- Escribe una función que tome una lista de números y devuelva el promedio de todos los números en la lista.
+
+// 12- Escribe una función que tome una cadena de texto y devuelva una nueva cadena con todas las palabras en orden inverso.
+
+// 13- Escribe una función que tome una lista de nombres y devuelva una lista de todos los nombres con una letra añadida al final.
+
+// 14- Escribe una función que tome una lista de números y devuelva una nueva lista con sólo los números pares.
+
+// 15- Escribe una función que tome una lista de números y devuelva la suma de todos los números múltiplos de 3.
+
+// 16- Escribe una función que tome una cadena de texto y devuelva una nueva cadena con todas las palabras en mayúsculas.
+
+// 17- Escribe una función que tome una lista de nombres y devuelva una lista de todos los nombres con la primera letra en mayúsculas.
+
+
+
+
+// Nota:
+// Ejercicios propuestos por ChatGPT. 
+// Estos ejercicios no fueron corregidos por un profesor, pero como funcionan los tomo como bien hechos. Desconozco si alguno cuenta con alguna mala practica
+// o si alguno estaba pensado para resolverse con algua funcion de orden superior en especifico o algo por el estilo, los hice a mi parecer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// RESPUESTAS
+
+
+
 // 1- Escribe una función que tome dos números y devuelva la suma de ellos.
 
 function suma(primerNumero, segundoNumero){
