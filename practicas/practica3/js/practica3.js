@@ -197,22 +197,134 @@ alertaQueAlerta();
 
 // 9- Crea un formulario en tu página HTML y usa la función "addEventListener" para asignarle un manejador de eventos que valide los datos del formulario cuando se envíe.
 
-let error = 0;
-const formulario = document.getElementById('form');
+// Guardo en una variable los elementos del DOM del formulario y escucho el boton de envio:
 const email = document.getElementById('email');
+const texto = document.getElementById('text');
+const checkbox = document.getElementById('checkbox');
+const sumbitButton = document.getElementById('sumbit-button')
+sumbitButton.addEventListener('click', validarFormulario);
 
-
-function validarMail(email){
-
-    let contieneArroba;
-
-    for (let i = 0; i < email.length; i++) {
-        if (email[i] == '@'){
-            contieneArroba = true;
-        }
-    }
-
-    if (contieneArroba && email.length > 8){
+// Funcion rudimentaria para validar mail
+function validarMail(){
+    if (email.value.includes('@') && email.value.length > 8){
         return true;
+    } else {
+        return false;
     }
 };
+
+// Funcion rudimentaria para validar la consulta
+function validarTexto(){
+    if(texto.value.length >= 10){
+        return true;
+    } else {
+        return false;
+    }
+};
+// Funcion rudimentaria para validar el estado del checkbox
+function validarCheckbox(){
+    if(checkbox.checked){
+        return true;
+    } else {
+        return false;
+    }
+};
+
+// Hago una funcion que valide todo
+function validarFormulario(event){
+    // Inicializo la variable en true 
+    let esValido = true;
+    // Elimino el comportamiento por defecto del navegador para los formularios
+    event.preventDefault();
+
+    if (!validarMail()) {
+        esValido = false;
+        alert('Escriba un mail valido');
+    } 
+    if (!validarTexto()) {
+        esValido = false;
+        alert('Escriba una consulta valida');
+    } 
+    if (!validarCheckbox()) {
+        esValido = false;
+        alert('Acepte los terminos y condiciones');
+    }
+    if(esValido) {
+      alert('Ha enviado su consulta!');
+    }
+};
+
+
+
+// 10- Usa la función "removeChild" para eliminar un elemento de tu página HTML.
+
+// Contenedor padre
+const elementoBorrado = document.getElementById('esto-se-borra');
+// Hijo
+const elementoEliminado = document.getElementById('a-borrar');
+
+// Remuevo al hijo desde el padre
+elementoBorrado.removeChild(elementoEliminado);
+
+
+
+
+
+
+// RESPUESTAS NIVEL DOS
+
+// 1- Crea una página HTML con una tabla (por ejemplo, con nombres de personas y sus edades). Usa la función "getElementsByTagName" para obtener todos los elementos "td" y guárdalos en una variable.
+
+const tableItems = document.getElementsByTagName('td');
+let valoresTabla = '';
+
+for (let i = 0; i < tableItems.length; i++) {
+    valoresTabla += tableItems[i].innerHTML + ' ';
+};
+
+console.log(valoresTabla);
+
+
+
+// 2- Usa un ciclo "for" para recorrer todos los elementos "td" y cambiar el color de letra de cada uno al pasar el cursor sobre ellos.
+
+function cambiarColorHover(){
+    for (let i = 0; i < tableItems.length; i++) {
+        tableItems[i].addEventListener('mouseover', () => {
+            for (let i = 0; i < tableItems.length; i++) {
+                tableItems[i].style.color = 'red';
+            };
+        });
+    }
+};
+cambiarColorHover();
+
+
+
+// 3- Añade un botón a tu página HTML y usa la función "addEventListener" para asignarle un manejador de eventos que oculte todos los elementos "td" cuando se haga clic en el botón.
+
+const botonCerrar = document.getElementById('boton-cerrar-td');
+
+botonCerrar.addEventListener('click', () => {
+    for (let i = 0; i < tableItems.length; i++) {
+        tableItems[i].style.display = 'none';
+    };
+});
+
+
+
+// 4- Usa la función "getElementsByClassName" para obtener varios elementos de tu página HTML y cambiar su contenido usando la propiedad "innerHTML".
+
+const etiquetasPe = document.getElementsByClassName('etiqueta-p');
+
+for (let i = 0; i < etiquetasPe.length; i++) {
+    etiquetasPe[i].innerHTML = tableItems[i].innerHTML;
+};
+
+// 5- Crea un elemento "input" nuevo y añádelo a tu página HTML usando la función "createElement" y luego la función "insertBefore".
+
+const inputDesdeJs = document.createElement('input');
+inputDesdeJs.textContent = 'hola'
+const divDeEtiquetas = document.getElementById('div-de-etiquetas');
+
+inputDesdeJs.insertBefore(divDeEtiquetas);
