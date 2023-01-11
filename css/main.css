@@ -73,11 +73,16 @@ header {
   display: grid;
   grid-template-rows: auto auto;
   grid-row-gap: 64px; }
-  #js__main h2 {
-    padding: 32px;
+  #js__main .h2-clases {
     background-color: #222222;
-    font-size: 42px;
-    color: #f7df1e; }
+    padding: 64px; }
+    #js__main .h2-clases h2 {
+      font-size: 42px;
+      color: #f7df1e;
+      border-bottom: solid 4px #f7df1e;
+      padding-bottom: 48px; }
+  #js__main .h2-clases:hover {
+    background-color: black; }
   #js__main .clases1a16 {
     font-family: 'Roboto', sans-serif;
     display: grid;

@@ -80,39 +80,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// RESPUESTAS
 
 
 
@@ -142,3 +110,109 @@ const textContents = Array.from(liElement).map(li => li.textContent);
 const frutas2 = textContents.join(" ");
 
 console.log(frutas2)
+
+
+
+
+// 2- Usa un ciclo "for" para recorrer todos los elementos "li" y cambiar el color de fondo de cada uno al hacer clic en ellos.
+
+function cambiarColorFondo(){
+    this.style.backgroundColor = 'red';
+};
+
+for (let i = 0; i < liElement.length; i++) {
+    liElement[i].addEventListener('click', cambiarColorFondo);
+};
+
+
+
+// 3- Añade un botón a tu página HTML y usa la función "addEventListener" para asignarle un manejador de eventos que muestre un mensaje en la consola cuando se haga clic en el botón.
+
+const botonQueMuestra = document.getElementById('boton-que-muestra');
+
+// Con arrow function
+botonQueMuestra.addEventListener('click', () => console.log('Le haz hecho click!'))
+
+// Con funcion declarativa
+function avisoClick(){
+    console.log('Le haz hecho click pero con una funcion declarativa!');
+};
+
+botonQueMuestra.addEventListener('click', avisoClick);
+
+
+
+// 4- Usa la función "getElementById" para obtener un elemento de tu página HTML y cambiar su contenido usando la propiedad "textContent".
+
+const tagVacia = document.getElementById('hey-estoy-vacio');
+
+tagVacia.textContent = 'Pues ya no estas vacia';
+
+
+
+// 5- Crea un elemento "div" nuevo y añádelo a tu página HTML usando la función "createElement" y luego la función "appendChild".
+
+const nuevoDiv = document.createElement('div'); // Creo un nuevo div
+nuevoDiv.textContent = 'Esto es un div muy genial.'; // Agrego contenido al div
+nuevoDiv.classList.add('una-clase-pero-con-js'); // Le doy una clase al div por si necesito llamarlo en algun momento
+
+const article = document.getElementById("un-article-cualquiera"); // Selecciono el contenedor que quiero que aloje al nuevo div
+article.appendChild(nuevoDiv); // Finalmente agrego el nuevo div al contenedor
+
+
+
+// 6- Usa la función "querySelector" para obtener un elemento de tu página HTML por su clase y luego cambiar su estilo usando la propiedad "style".
+
+const tituloDudoso =  document.querySelector('.titulo-dudoso');
+
+tituloDudoso.style.fontSize = '32px';
+
+
+
+// 7- Usa la función "querySelectorAll" para obtener todos los elementos de tu página HTML con una determinada clase y luego usa un ciclo "for" para recorrerlos y cambiar su estilo.
+
+const asignaturasVarias = document.querySelectorAll('.asignatura');
+
+for (let i = 0; i < asignaturasVarias.length; i++) {
+    asignaturasVarias[i].style.color = 'green';
+    asignaturasVarias[i].style.fontSize = '22px';
+};
+
+
+
+// 8- Crea una función que añada un nuevo elemento a tu página HTML cada vez que se ejecute. Usa la función "createElement" y luego la función "appendChild" para añadir el elemento a tu página.
+
+const alerta = document.createElement('p'); // Creo la etiqueta p
+alerta.classList.add('texto-de-alerta') // Le pongo una clase para darle estilos
+alerta.textContent = 'ESTO ES UNA ALERTA QUE ALERTA!!'; // Le agrego contenido
+const divAlerta = document.getElementById('div-alerta'); // Identifico el contenedor padre
+
+function alertaQueAlerta(){ // Creo la funcion que agrega la etiqueta p al contenedor
+    divAlerta.appendChild(alerta);
+};
+
+alertaQueAlerta();
+
+
+
+// 9- Crea un formulario en tu página HTML y usa la función "addEventListener" para asignarle un manejador de eventos que valide los datos del formulario cuando se envíe.
+
+let error = 0;
+const formulario = document.getElementById('form');
+const email = document.getElementById('email');
+
+
+function validarMail(email){
+
+    let contieneArroba;
+
+    for (let i = 0; i < email.length; i++) {
+        if (email[i] == '@'){
+            contieneArroba = true;
+        }
+    }
+
+    if (contieneArroba && email.length > 8){
+        return true;
+    }
+};
