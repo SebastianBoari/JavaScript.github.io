@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Clase 10: Storage & JSON</title>
+</head>
+
+<body>
+<div class="bg1">
+    <header id="header__clases">
+        <nav class="clases__nav">
+            <figure class="nav__logo">
+                <a href="../index.html"><img class="logo__img" src="../img/jslogo.webp" alt=""></a>
+            </figure>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
+                <li class="nav__item"><a class="nav__link" href="../clases/">Clase Anterior</a></li>
+                <li class="nav__item"><a class="nav__link" href="../clases/">Clase Siguiente</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+        
+<main id="clases__main">
+    <div class="bg2">
+        <section class="clases__anotaciones">
+            <h2 class="clases__title">Anotaciones:</h2>
+            <article class="article__anotaciones">
+                <article class="anotaciones5__temario">
+                    <h3 class="temario__title">Temario de la clase:</h3>
+                    <ul class="temario__list">
+                        <li class="temario__item">Almacenamiento local en JS</li>
+                        <li class="temario__item">localStore/sessionStorage y metodos mas utilizados</li>
+                        <li class="temario__item">JSON</li>
+                    </ul>
+                </article>
+                <article class="clase__tema clase10__tema1">
+                    <div class="div--column">
+                        <h4>Almacenamiento local en JS</h4>
+                        <p>Una de las características importantes de JavaScript es su capacidad para almacenar datos localmente en el navegador del usuario.</p>
+                        <p>El almacenamiento local del navegador es un espacio disponible en el dispositivo del usuario en el que se pueden guardar datos. Estos datos pueden ser recuperados y utilizados en una sesión de navegación posterior, lo que permite a las aplicaciones web guardar información del usuario y utilizarla para personalizar su experiencia.</p>
+                        <p>Existen dos tipos de almacenamiento local en JavaScript: el almacenamiento de sesión y el almacenamiento local. El almacenamiento de sesión se utiliza para guardar datos temporalmente durante una sesión de navegación específica. Una vez que el usuario cierra el navegador, los datos se eliminan. Por otro lado, el almacenamiento local se utiliza para guardar datos de forma permanente en el dispositivo del usuario.</p>
+                        <p>Cada almacenamiento local es independiente en relación al dominio. Esto significa que los datos almacenados en un dominio específico no están disponibles para otros dominios. Esto garantiza la privacidad y seguridad de los datos del usuario.</p>
+                        <p>En el panel de herramientas del desarrollador dentro del navegador (devtool) hay una seccion llamada "Applicacion" donde podemos encontrar el almacenamiento local y el almacenamiento de la sesion.</p>
+                        <img src="../img/clase10/ejemplo1.jpg" alt="">
+                    </div>
+                </article>
+        
+                <article class="clase__tema clase10__tema2">
+                    <div class="div--column">
+                        <h4>localStorage/sessionStorage y metodos mas utilizados</h4>
+                        <p>El objeto localStorage y sessionStorage son funcionalidades integradas de JavaScript que permiten guardar datos en el dispositivo del usuario de forma permanente o temporalmente, respectivamente bajo el formato de clave-valor.</p>
+                        <img src="../img/clase10/ejemplo2.png" alt="">
+                        <p><span>Metodos mas populares:</span>Cabe aclarar que los metodos para localStorage y sessionStorage son los mismos y valen para ambos por igual a continuacion veremos los metodos mas utilizados.</p>
+                        <p><span>setItem</span> es un método de ambos localStorage y sessionStorage que se utiliza para almacenar información en el navegador. La sintaxis es la siguiente:</p>
+                        <img src="../img/clase10/ejemplo3.png" alt="">
+                        <p><span>getItem</span> se utiliza para recuperar información almacenada en el navegador. La sintaxis es la siguiente:</p>
+                        <img src="../img/clase10/ejemplo4.png" alt="">
+                        <p><span>removeItem</span> es un método de javascript que se utiliza para eliminar un item específico almacenado en localStorage o sessionStorage. Es importante mencionar que este método solo elimina el item especificado, no todo el contenido almacenado.</p>
+                        <img src="../img/clase10/ejemplo5.png" alt="">
+                        <p><span>clear</span> es un método de javascript que se utiliza para eliminar todo el contenido almacenado en localStorage o sessionStorage. Es importante mencionar que este método elimina todo el contenido almacenado, no solo un item específico.</p>
+                        <img src="../img/clase10/ejemplo6.png" alt="">
+                    </div>
+                </article>
+
+                <article class="clase__tema clase10__tema3">
+                    <div class="div--column">
+                        <p>El Local Storage solo permite guardar valores en formato de cadena de caracteres, si intentamos guardar un valor diferente a esto, este pierde su forma original y no se puede recuperar. Es importante tomar en cuenta esto al momento de guardar valores diferentes a strings en Local Storage, ya que si no se convierten a un formato apropiado para su almacenamiento, no podremos utilizarlos correctamente en el futuro.</p>
+                        <p>Por ejemplo, si queremos guardar un arreglo de frutas en Local Storage, debemos convertirlo a una cadena de caracteres antes de guardarlo. Una vez recuperado el valor, debemos convertirlo de nuevo a su formato original para poder utilizarlo correctamente.</p>
+                        <img src="../img/clase10/ejemplo7.png" alt="">
+                    </div>
+                    <div class="div--column">
+                        <h4>JSON</h4>
+                        <p>JSON es un formato de texto plano que se utiliza para representar datos estructurados. Es una abreviación de JavaScript Object Notation, ya que se utiliza ampliamente en JavaScript para transmitir y almacenar datos.</p>
+                        <p>Una de las principales ventajas de JSON es que agiliza la transmisión de datos, ya que permite transmitir información en un formato legible y fácil de procesar. Además, JSON es un formato estandarizado, lo que significa que puede ser leído y utilizado por diferentes lenguajes de programación.</p>
+                        <p>Para poder utilizar JSON en JavaScript, tenemos a disposición dos métodos: JSON.stringify() y JSON.parse(). El primero nos permite convertir un objeto JavaScript en una cadena de caracteres en formato JSON, mientras que el segundo nos permite convertir una cadena de caracteres en formato JSON en un objeto JavaScript.</p>
+                    </div>
+                    <div class="div--column">
+                        <p><span>JSON.stringify</span>  es una función que permite convertir un valor en JavaScript, como un objeto o un arreglo, en una cadena de caracteres en formato JSON. Esto es útil para almacenar datos en una base de datos o transmitirlos a través de una red.</p>
+                        <img src="../img/clase10/ejemplo8.png" alt="">
+                        <p><span>JSON.parse</span> es una función que permite convertir una cadena de caracteres en formato JSON en un valor en JavaScript, como un objeto o un arreglo. Esto es útil para recuperar datos almacenados en una base de datos o recibidos a través de una red.</p>
+                        <img src="../img/clase10/ejemplo9.png" alt="">
+                    </div>
+                </article>
+            </article>
+        </section>
+    </div>
+</main>
+        
+<div class="bg1">
+    <footer id="js__footer">
+        <div class="footer__imgs">
+            <img class="img1" src="../img/jslogo.webp" alt="">
+            <a target="_blank" href="https://www.coderhouse.com/"><img class="img2" src="../img/logos_coderhouse.png" alt=""></a>
+        </div>
+        <div class="footer__descrip">
+            <p>Anotaciones, resumenes, consignas y practicas desarrolladas en el curso de JavaScript dictado en Coderhouse.</p> 
+        </div>
+    </footer>
+</div>
+    
+
+
+
+    <script src="../js/clase10.js"></script>
+</body>
+</html>

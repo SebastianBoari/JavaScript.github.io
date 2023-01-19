@@ -1,0 +1,135 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Clase 12: Operadores avanzados / Librerias</title>
+</head>
+
+<body>
+<div class="bg1">
+    <header id="header__clases">
+        <nav class="clases__nav">
+            <figure class="nav__logo">
+                <a href="../index.html"><img class="logo__img" src="../img/jslogo.webp" alt=""></a>
+            </figure>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
+                <li class="nav__item"><a class="nav__link" href="../clases/">Clase Anterior</a></li>
+                <li class="nav__item"><a class="nav__link" href="../clases/">Clase Siguiente</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+        
+<main id="clases__main">
+    <div class="bg2">
+        <section class="clases__anotaciones">
+            <h2 class="clases__title">Anotaciones:</h2>
+            <article class="article__anotaciones">
+                <article class="anotaciones5__temario">
+                    <h3 class="temario__title">Temario de la clase:</h3>
+                    <ul class="temario__list">
+                        <li class="temario__item">Operadores y condicionales avanzados</li>
+                        <li class="temario__item">Desestructuracion</li>
+                        <li class="temario__item">Spread</li>
+                    </ul>
+                </article>
+
+                <article class="clase__tema clase12__tema1">
+                    <div class="div--column">
+                        <h4>Sugar Syntax</h4>
+                        <p>La sintaxis reducida o "sugar syntax" es un término que hace referencia a una forma simplificada de escribir código que es más fácil de leer y entender para los desarrolladores. Esto se logra mediante el uso de abreviaciones o notaciones alternativas que tienen el mismo significado que las sintaxis tradicionales, pero son más concisas y fáciles de digerir.</p>
+                        <p>Por ejemplo, en JavaScript, el uso de la sintaxis de "arrow function" es un ejemplo de sugar syntax, ya que es una forma más corta y concisa de escribir funciones anónimas en comparación con la sintaxis tradicional de "function".</p>
+                    </div>
+                    <div class="div-column">
+                        <h4>Unario</h4>
+                        <p>En JavaScript, los operadores unarios son aquellos que operan sobre un solo operando o valor. Los operadores de incremento y decremento son ejemplos de operadores unarios.</p>
+                        <p>El operador de incremento "++" incrementa en 1 el valor de una variable. Por ejemplo, si tenemos una variable "i" con el valor de 5, el código "i++" aumentaría el valor de "i" a 6. Es equivalente a escribir "i = i + 1".</p>
+                        <p>El operador de decremento "--" disminuye en 1 el valor de una variable. Por ejemplo, si tenemos una variable "i" con el valor de 5, el código "i--" disminuiría el valor de "i" a 4. Es equivalente a escribir "i = i - 1".</p>
+                        <p>Es importante tener en cuenta que el operador de incremento y decremento pueden ser colocados tanto antes como después del operando, lo que cambia el resultado. Por ejemplo, si se tiene una variable "i" con el valor de 5, "i++" incrementará el valor de "i" a 6 pero devolverá el valor anterior (5) y "++i" devolverá el valor incrementado (6).</p>
+                    </div>
+                    <div class="div--column">
+                        <h4>Operadores de Asignación Shorthand</h4>
+                        <p>Estos operadores te permiten asignar nuevos valores a variables existentes de manera más concisa y eficiente. Operadores como += y -=, son una simplificación de la asignación tradicional y permiten escribir código más legible y fácil de entender.</p>
+                        <p>Los operadores de asignación shorthand, como el operador += y -=, y los operadores unarios, como el operador ++ y --, están relacionados en el sentido que ambos son utilizados para modificar el valor de una variable. Sin embargo, su uso y su funcionamiento son diferentes.</p>
+                        <p>Los operadores de asignación shorthand se utilizan para asignar un nuevo valor a una variable existente mediante la realización de una operación aritmética. Por ejemplo, el operador += se utiliza para sumar un valor a una variable existente y el operador -= se utiliza para restar un valor a una variable existente.</p>
+                        <p>Por otro lado, los operadores unarios incremento y decremento (++ y --) son utilizados para incrementar o disminuir en 1 el valor de una variable.</p>
+                    </div>
+                </article>
+        
+                <article class="clase__tema clase12__tema2">
+                    <h4>Evaluaciones de Cortocircuito</h4>
+                    <p>La evaluación de cortocircuito es una técnica utilizada en programación para evitar evaluaciones innecesarias y mejorar el rendimiento del código. Esto se logra mediante el uso de operadores lógicos, como el operador OR (||) o el operador AND (&&).</p>
+                    
+                    <p><span>OR LOGICO</span> En el ejemplo dado, se utiliza el operador OR (||) para devolver el primer valor verdadero. En este caso, la variable "jamon" tiene el valor "si", que es considerado verdadero, por lo que el operador OR devuelve el valor "si".</p>
+                    <p>En el ejemplo se ve como en el forEach, se busca en cada elemento del arreglo si tiene una propiedad "cliente", si es asi se imprime ese valor, sino se imprime "Bienvenido nuevo cliente", este es un ejemplo de como se utiliza el operador OR (||) para retornar el primer valor verdadero y evitar errores.</p>
+                    <img src="../img/clase12/ejemplo1.png" alt="">
+
+                    <p><span>AND LOGICO</span>En el ejemplo dado, se utiliza el operador AND (&&) para devolver el último operando que sea true. En este caso, la variable "saludar" tiene el valor false, por lo que el operador AND no ejecuta la segunda acción y no se imprime "Bienvenido a la web" en consola.</p>
+                    <p>En el forEach, se busca en cada elemento del arreglo si tiene una propiedad "edad", si es asi se crea un nuevo elemento "p" y se le asigna el valor de la edad del cliente y se añade al div, si no tiene esa propiedad no se hace nada, ese es un ejemplo de como se utiliza el operador AND (&&) para ejecutar algo solo si la condicion es verdadera.</p>
+                    <img src="../img/clase12/ejemplo2.png" alt="">
+                </article>
+
+                <article class="clase__tema clase12__tema3">
+                    <div class="div--column">
+                        <h4>Condicionales avanzados: el operador ternario</h4>
+                        <p>El operador ternario es un operador de tres operandos en JavaScript que permite evaluar condiciones y devolver un resultado en función de si la condición es verdadera o falsa. Es similar a una estructura de control if-else en su funcionamiento.</p>
+                        <p>El operador ternario consta de una condición seguida de dos valores separados por el signo "?" y ":" respectivamente. La condición se evalúa primero, y si es verdadera se devuelve el primer valor, de lo contrario se devuelve el segundo valor.</p>
+                        <p>En el ejemplo dado, se utiliza el operador ternario para refactorizar la función validarEdad y crear una nueva función validarCine, donde se evalua si la edad es mayor o igual a 18 o si el permiso de los padres es verdadero, si es asi entonces "Puede acceder" sino "No puede acceder".</p>
+                        <img src="../img/clase12/ejemplo3.png" alt="">
+                    </div>
+                    <div class="div--column">
+                        <h4>Nullish</h4>
+                        <p>El operador de fusión nullish (??) es un operador de JavaScript que se utiliza para evaluar si un valor es null o undefined. Si el valor es null o undefined, devuelve el segundo operando, de lo contrario, devuelve el primer operando. Es similar al operador OR lógico (||) pero tiene un comportamiento diferente cuando se evalúa un valor undefined o null.</p>
+                        <p>En el ejemplo dado, se utiliza el operador de fusión nullish (??) para evaluar si la variable "data" es undefined, en caso de serlo imprime "No se hallan datos" y en el forEach se evalua si el cliente tiene edad si no es asi imprime "No tiene edad"</p>
+                        <img src="../img/clase12/ejemplo4.png" alt="">
+                    </div>
+                    <div class="div--column">
+                        <h4>El encadenamiento opcional</h4>
+                        <p>El encadenamiento opcional (?.) es una característica de JavaScript que permite acceder a las propiedades anidadas de un objeto sin generar un error en caso de que esa propiedad no exista. Utilizando el operador "?" antes de la notación de punto "." se evita que el código genere un error y devuelva "undefined" en su lugar.</p>
+                        <p>En el ejemplo dado, se utiliza el encadenamiento opcional (?.) para acceder a la propiedad "padre" de la propiedad "familia" del objeto "persona". Si "familia" no existe, el código devuelve "undefined" en lugar de generar un error.</p>
+                        <p>Además, se puede combinar el uso del encadenamiento opcional con otros operadores como el operador ternario o el operador de fusión nullish (??) para manejar de manera adecuada los valores "undefined" en caso de que una propiedad no exista.</p>
+                        <img src="../img/clase12/ejemplo5.png" alt="">
+                    </div>
+                </article>
+
+                <article class="clase__tema clase12__tema4">
+                    <div class="div--colum">
+                        <h4>Desestructuracion</h4>
+                        <p>La destructuración es una técnica en JavaScript que permite desempaquetar valores de objetos y arrays, y asignarlos a variables independientes. Es una forma de acceder a los valores contenidos en un objeto o array de manera rápida y sencilla.</p>
+                        <p>En el ejemplo dado, se utiliza destructuración para extraer valores específicos de un array de frutas y de un objeto "mesa". En el primer bloque de código se extraen los valores en las posiciones 0, 2 y 3 del array y se asignan a las variables frutaAcida, frutaFavorita y frutas[3] respectivamente. Luego, en el segundo bloque se extrae el valor de la propiedad "asientos" del objeto "mesa" y se asigna a la variable "asientos".</p>
+                        <p>Además, se puede utilizar un alias para asignar un nuevo nombre a una variable al momento de extraer un valor de un objeto, como se ve en la línea const { patas : cantidadDePatas } = mesa. En este caso, se extrae el valor de la propiedad "patas" del objeto "mesa" y se asigna a la variable "cantidadDePatas"</p>
+                        <img src="../img/clase12/ejemplo6.png" alt="">
+                    </div>
+                    <div class="div--column">
+                        <h4>Spread Operator</h4>
+                        <p>El operador de propagación (spread operator) es una característica de JavaScript que permite expandir elementos iterables, como arrays o cadenas de texto, para tratarlos de manera individual. En el ejemplo dado, se utiliza el spread operator para pasar cada elemento de un array de números como argumento individual a la función Math.max() y así obtener el número mayor.</p>
+                        <p>Además, el spread operator puede utilizarse para copiar arreglos o objetos, como se ve en el ejemplo donde se copia el arreglo "numeros" a un nuevo arreglo "masNumeros" y tambien se copian las propiedades de dos objetos en un solo objeto "muchasPropiedades".</p>
+                        <img src="../img/clase12/ejemplo7.png" alt="">
+                    </div>
+                </article>
+
+            </article>
+        </section>
+    </div>
+</main>
+        
+<div class="bg1">
+    <footer id="js__footer">
+        <div class="footer__imgs">
+            <img class="img1" src="../img/jslogo.webp" alt="">
+            <a target="_blank" href="https://www.coderhouse.com/"><img class="img2" src="../img/logos_coderhouse.png" alt=""></a>
+        </div>
+        <div class="footer__descrip">
+            <p>Anotaciones, resumenes, consignas y practicas desarrolladas en el curso de JavaScript dictado en Coderhouse.</p> 
+        </div>
+    </footer>
+</div>
+    
+
+
+
+    <script src="../js/clase12.js"></script>
+</body>
+</html>
