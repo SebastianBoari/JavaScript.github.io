@@ -619,3 +619,47 @@ header {
     color: red; }
   #ejemplo #tarjeta .negro {
     color: black; }
+
+.swiper {
+  max-width: 500px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 150px; }
+
+.swiper-slide img {
+  display: block;
+  max-width: 250px; }
+
+#inputSumbitEjemplo {
+  width: 180px;
+  padding: 8px 32px;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: yellow;
+  background-color: #222222;
+  border: yellow solid 2px;
+  border-radius: 5px;
+  transition: all .3s; }
+
+#inputSumbitEjemplo:hover {
+  background-color: black; }
+
+#toasty {
+  width: 180px;
+  padding: 8px 32px;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: yellow;
+  background-color: #222222;
+  border: yellow solid 2px;
+  border-radius: 5px;
+  transition: all .3s; }
+
+#toasty:hover {
+  background-color: black; }

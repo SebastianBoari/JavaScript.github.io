@@ -3,6 +3,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Clase 13: Librerias</title>
 </head>
 
@@ -31,25 +33,93 @@
                     <h3 class="temario__title">Temario de la clase:</h3>
                     <ul class="temario__list">
                         <li class="temario__item">Librerias</li>
-                        <li class="temario__item">Toastify</li>
-                        <li class="temario__item">Luxon</li>
+                        <li class="temario__item">Instalacion de Librerias</li>
+                        <li class="temario__item">Aplicaciones y precauciones</li>
                     </ul>
                 </article>
 
                 <article class="clase__tema clase13__tema1">
-                    
-                </article>
-        
-                <article class="clase__tema clase13__tema2">
-                   
+                    <div class="div--column">
+                        <h4>Librerias</h4>
+                        <p>Las librerías son un conjunto de funciones y módulos preconstruidos que nos permiten ahorrar tiempo y esfuerzo al desarrollar un proyecto, ya que proporcionan funcionalidades comunes que ya están probadas y optimizadas. Al usar librerías, podemos enfocarnos en la lógica específica de nuestro proyecto en lugar de recrear funciones ya existentes.</p>
+                        <p><span>Entre los beneficios de usar librerías se encuentran:</span> ahorro de tiempo, mejorar la calidad del código, reducción de errores y facilidad de mantenimiento.</p>
+                        <p>Cuando queramos implementar una librería en nuestro proyecto javascript vanilla, debemos visitar sitios web como npmjs.com o GitHub, donde podremos buscar y descargar las librerías adecuadas para nuestro proyecto.</p>
+                        <p><span>Algunos aspectos importantes y generales sobre las librerías son:</span> asegurarnos de elegir una librería que sea mantenida activamente, leer la documentación y las instrucciones de instalación antes de implementarla, y tener en cuenta las dependencias y las versiones compatibles de la librería con nuestro proyecto. Además debemos tener en cuenta la licencia de la librería y cumplir con los terminos de la misma.</p>
+                        <p><span>Entre las precauciones que debemos tener al usar librerías se encuentran:</span> asegurarnos de elegir una librería que sea segura y confiable, leer las revisiones y la documentación para conocer los problemas conocidos y las soluciones, y tener en cuenta las dependencias y las versiones compatibles de la librería con nuestro proyecto.</p>
+                        <p><span>Entre las desventajas de usar librerías se encuentran:</span> el tamaño de la librería puede aumentar el tamaño de nuestro proyecto, las librerías pueden depender de otras librerías y esto puede causar problemas de compatibilidad, y si no se mantiene adecuadamente, puede causar problemas de seguridad o estabilidad en nuestro proyecto.</p>
+                        <p>Es importante tener en cuenta que una librería puede tener dependencias, es decir, una o varias librerías que necesita para funcionar, es importante tener en cuenta estas dependencias y mantenerlas actualizadas para evitar problemas de compatibilidad.</p>
+                        <p>Además, debemos estar al tanto de las actualizaciones de las librerías y mantenerlas actualizadas para aprovechar las mejoras y correcciones de errores. A veces actualizar una librería puede causar problemas en nuestro proyecto, por lo que debemos hacer pruebas exhaustivas antes de implementar una actualización.</p>
+                    </div>
                 </article>
 
+
+                <article class="clase__tema clase13__tema2">
+                    <div class="div--column">
+                        <h4>Sweet Alert</h4>
+                        <p>Sweet Alert es una librería javascript que proporciona una interfaz amigable para mostrar alertas y confirmaciones al usuario. Su presencia se ejerce mediante el uso de promesas, lo que significa que podemos rastrear cómo el usuario interactúa con la alerta y obtener un valor de respuesta. La función principal de Sweet Alert es "swal()" y puede recibir como parámetros strings o un objeto. También se pueden usar iconos como success, warning, error, info, question, heart, custom y font awesome. Además, se pueden agregar botones personalizados y utilizar promesas para manipular la entrada del usuario. Es importante tener en cuenta que Sweet Alert devuelve null siempre que el usuario interactúa con cualquier cosa menos con el botón azul, que generalmente es el de aceptar. Si hace clic fuera de la alerta o en cancelar, el valor devuelto es null, si hace clic en aceptar devuelve true.</p>
+                        <p><span>Ejemplo de uso de Sweet Alert:</span></p>
+                        <form>
+                            <input id="inputSumbitEjemplo" type="submit" value="Confirmar">
+                        </form>
+                    </div>
+                    <div class="div--column">
+                        <h4>Luxon</h4>
+                        <p>Luxon es una librería javascript que nos permite simplificar el trabajar con fechas y horas en javascript. Utiliza una clase llamada DateTime, la cual representa un milisegundo específico en el tiempo, junto con una zona horaria y una configuración regional.
+                        La forma tradicional de trabajar con fechas en javascript es utilizando la clase nativa Date, sin embargo con Luxon podemos trabajar de forma más sencilla y acceder a diferentes atributos de la fecha. Al utilizar Luxon, podemos obtener la fecha actual utilizando .now() y también podemos trabajar con una fecha específica utilizando .local(). Además, Luxon permite instanciar fechas pasando como argumento dos objetos, uno relacionado al tiempo y otro relacionado a la zona horaria y tipo de numeración, para esto debemos utilizar .fromObject().
+                        Luxon también ofrece una lista de pre-sets para visualizar las fechas de diferentes maneras, como utilizando toString() o toLocaleString() y pasando como argumento el pre-set deseado. Además, podemos acceder a un valor específico de la fecha como year, month, day, second, weekday, zoneName, daysInMonth. Es importante leer la documentación para conocer todas</p>
+                    </div>
+                </article>
+        
                 <article class="clase__tema clase13__tema3">
-                   
+                    <div class="div--column">
+                        <h4>Toastify</h4>
+                        <p>Toastify es una librería javascript que nos permite implementar notificaciones de manera sencilla y personalizada. Al utilizar Toastify, podemos mostrar mensajes de notificación al usuario, como alertas de éxito, error, información, etc. La librería proporciona una interfaz amigable para crear notificaciones y modificar sus propiedades como el texto, la duración y si se agrega o no una cruz para cerrar la notificación.</p>
+                        <p><span>Ejemplo de uso de Toastify:</span></p>
+                        <button id="toasty">Click para probar Toastify</button>
+                    </div>
                 </article>
 
                 <article class="clase__tema clase13__tema4">
-                    
+                    <div class="div--column">
+                        <h4>Swiper</h4>
+                        <p>Swiper es una librería javascript que nos permite implementar carruseles de diferentes tipos, como imágenes, videos, texto, entre otros. La librería proporciona una interfaz amigable para crear carruseles y modificar sus propiedades. Es importante mencionar que para implementar Swiper en JavaScript vanilla se debe incluir el contenido HTML con las clases correspondientes, los estilos correspondientes y la inicialización en javascript para que funcione correctamente. Es importante tener en cuenta que los estilos, html y javascript son modificables hasta cierto punto, pero se pueden romper si no se siguen las instrucciones de la documentación oficial. Es importante leer la documentación para personalizar y evitar problemas en el funcionamiento del carrusel.</p>
+                    </div>
+                   <div class="div--column">
+                        <p><span>Ejemplo de uso de Swiper:</span></p>
+                        <!-- Swiper HTML Content-->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                            </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                    </div>
+                   </div>
                 </article>
 
             </article>
@@ -69,6 +139,10 @@
     </footer>
 </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
     <script src="../js/clase13.js"></script>
 </body>
 </html>
