@@ -663,3 +663,45 @@ header {
 
 #toasty:hover {
   background-color: black; }
+
+.clase15__tema4 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between; }
+  .clase15__tema4 .paginacion {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+    .clase15__tema4 .paginacion button {
+      width: 180px;
+      padding: 8px 32px;
+      font-family: sans-serif;
+      font-weight: 400;
+      color: yellow;
+      background-color: #222222;
+      border: yellow solid 2px;
+      border-radius: 5px;
+      transition: all .3s; }
+    .clase15__tema4 .paginacion button:hover {
+      background-color: black; }
+  .clase15__tema4 #ejemploFetchDomClase15 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px; }
+    .clase15__tema4 #ejemploFetchDomClase15 .card {
+      text-align: center;
+      padding: 16px;
+      border: solid 3px yellow;
+      border-radius: 5px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      gap: 16px; }
+      .clase15__tema4 #ejemploFetchDomClase15 .card .card__img img {
+        width: 150px; }
+      .clase15__tema4 #ejemploFetchDomClase15 .card .card__title {
+        font-size: 20px;
+        color: yellow; }
+      .clase15__tema4 #ejemploFetchDomClase15 .card .card__status {
+        color: white;
+        font-size: 16px; }
