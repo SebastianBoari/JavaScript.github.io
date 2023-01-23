@@ -9,7 +9,7 @@ let currentClass = 0;
 botonAnterior.addEventListener('click', () => {
     if (currentClass > 0) {
         currentClass--;
-        location.href = clases[currentClass];
+        botonAnterior.href = clases[currentClass];
     }
 });
 
@@ -17,6 +17,6 @@ botonAnterior.addEventListener('click', () => {
 botonSiguiente.addEventListener('click', () => {
     if (currentClass < clases.length - 1) {
         currentClass++;
-        location.href = clases[currentClass];
+        botonSiguiente.href = clases[currentClass];
     }
 });
