@@ -1,6 +1,6 @@
 /// DOM
 
-const nodemon = require("nodemon");
+// const nodemon = require("nodemon");
 
 // DOM: MODELO DE OBJETOS DEL DOCUMENTO || DOCUMENT OBJECTS MODEL
 // DOM es una estructura de objetos generada por el navegador
@@ -10,14 +10,6 @@ const nodemon = require("nodemon");
 /* El DOM (Modelo de Objetos del Documento) es una estructura de objetos que representa el contenido y la estructura de un documento HTML o XML. Nos permite acceder y modificar el contenido y la estructura del documento a través de código JavaScript utilizando el objeto global "document". Con el DOM podemos seleccionar elementos HTML específicos, crear, eliminar o modificar elementos del DOM y controlar eventos del usuario. 
 
 El DOM nos ofrece una gran cantidad de métodos y propiedades para interactuar con los elementos del documento y crear aplicaciones web más dinámicas y avanzadas, como cambiar el contenido de una página web sin recargarla completamente o realizar peticiones a un servidor sin tener que recargar la página. En resumen, el DOM es fundamental para la creación de aplicaciones web dinámicas y avanzadas. */
-
-
-
-
-
-
-
-
 
 
 
@@ -66,13 +58,6 @@ console.log(document.querySelector("#caja"));
 // Se puede iterar con for
 
 console.log(document.querySelectorAll("div"));
-
-
-
-
-
-
-
 
 
 
