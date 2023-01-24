@@ -41,7 +41,6 @@ footer{
 }
 @media (max-width: 576px){
     footer{
-        padding: 32px;
         @include flex(column, nowrap, space-between, center, 32px);
         .footer__imgs{
             .img1{

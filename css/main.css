@@ -73,7 +73,6 @@ footer {
 
 @media (max-width: 576px) {
   footer {
-    padding: 32px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -103,7 +102,7 @@ header {
 
 @media (max-width: 576px) {
   header {
-    padding: 16px 16px 64px; }
+    padding: 8px 8px 32px; }
     header a {
       display: flex;
       flex-flow: column;
@@ -248,7 +247,7 @@ header {
 
 @media (max-width: 576px) {
   #js__main {
-    padding: 16px;
+    padding: 32px 8px;
     grid-row-gap: 32px; }
     #js__main .h2-clases {
       padding: 32px; }
@@ -259,6 +258,7 @@ header {
     #js__main .clases1a16 {
       grid-template-columns: 1fr; }
       #js__main .clases1a16 .clases {
+        padding: 48px 32px;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;

@@ -154,7 +154,7 @@
 
 @media (max-width: 576px){
     #js__main{
-        padding: 16px;
+        padding: 32px 8px;
         grid-row-gap: 32px;
         .h2-clases{
             padding: 32px;
@@ -167,6 +167,7 @@
         .clases1a16{
             grid-template-columns: 1fr;
             .clases{
+                padding: 48px 32px;
                 @include flex(column, nowrap, space-between, stretch, 0px);
                 .clases__descrip{
                     @include flex(column, nowrap, space-between, stretch, 32px);
