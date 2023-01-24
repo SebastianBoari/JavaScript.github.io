@@ -5,10 +5,20 @@
     padding: 0;
     text-decoration: none;
 }
+html{
+    font-size: 62.5%;
+}
+
 body{
     display: grid;
     grid-template-columns: auto;
 }
 main{
     font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 576px){
+    html{
+        font-size: 55%;
+    }
 }

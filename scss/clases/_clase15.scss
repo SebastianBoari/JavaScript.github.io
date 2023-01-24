@@ -40,12 +40,12 @@
                 }
             }
             .card__title{
-                font-size: 20px;
+                font-size: $font20;
                 color: yellow;
             }
             .card__status{
                 color: white;
-                font-size: 16px;
+                font-size: $font16;
             }
         }
     }

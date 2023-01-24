@@ -6,12 +6,30 @@ header{
     padding: 64px;
     a{
         h1{
-        font-size: 64px;
+        font-size: $font64;
         color: rgba(247, 223, 30, 1);
         transition: all 1s;
         }
         h1:hover{
             text-shadow: 1px 1px 15px rgb(0, 0, 0);
+        }
+    }
+}
+
+@media (max-width: 576px){
+    header{
+        padding: 16px 16px 64px;
+        a{
+            display: flex;
+            flex-flow: column;
+            gap: 64px;
+            align-items: center;
+            h1{
+                font-size: 32px;
+            }
+            img{
+                width: 100px;
+            }
         }
     }
 }

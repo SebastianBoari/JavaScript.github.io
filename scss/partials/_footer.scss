@@ -2,7 +2,7 @@ footer{
     max-width: 1400px;
     margin: 0 auto;
     padding: 64px;
-    @include flex(row, nowrap, space-between, stretch, 0);
+    @include flex(row, wrap, space-between, stretch, 0);
     .footer__imgs{
         @include flex(column, nowrap, space-between, center, 32px);
         .img1{
@@ -18,7 +18,42 @@ footer{
         max-width: 420px;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
-        font-size: 32px;
+        font-size: $font32;
         color: white;
+    }
+}
+
+@media (max-width: 768px){
+    footer{
+        padding: 32px;
+        .footer__imgs{
+            .img1{
+                width: 50px;
+            }
+            .img2{
+                width: 200px;
+            }
+        }
+        .footer__descrip{
+            max-width: 340px;
+        }
+    }
+}
+@media (max-width: 576px){
+    footer{
+        padding: 32px;
+        @include flex(column, nowrap, space-between, center, 32px);
+        .footer__imgs{
+            .img1{
+                width: 50px;
+            }
+            .img2{
+                width: 200px;
+            }
+        }
+        .footer__descrip{
+            max-width: 340px;
+            font-size: 22px;
+        }
     }
 }

@@ -14,7 +14,7 @@
             .nav__item{
                 .nav__link{
                     font-family: 'Roboto' sans-serif;
-                    font-size: 24px;
+                    font-size: $font24;
                     font-weight: 400;
                     color: rgba(247, 223, 30, 1);
                     text-decoration: none;
@@ -35,7 +35,7 @@
         .clases__title{
             padding: 32px;
             background-color: rgb(34, 34, 34);
-            font-size: 32px;
+            font-size: $font32;
             color: rgba(247, 223, 30, 1);
         }
         .clases__article{
@@ -49,7 +49,7 @@
                     padding: 32px;
                     border: solid 3px rgba(247, 223, 30, 1);
                     color: white;
-                    font-size: 20px;
+                    font-size: $font20;
                     ul{
                         list-style: none;
                         @include flex(column, nowrap, space-between, stretch, 8px);
@@ -57,7 +57,7 @@
                     }
                     span{
                         color: rgba(247, 223, 30, 1);
-                        font-size: 18px;
+                        font-size: $font18;
                     }
                 }
             }
@@ -75,7 +75,7 @@
         .clases__title{
             padding: 32px;
             background-color: rgb(34, 34, 34);
-            font-size: 32px;
+            font-size: $font32;
             color: rgba(247, 223, 30, 1);
         }
         .article__anotaciones{
@@ -95,7 +95,7 @@
                 grid-row-end: span 2;
                 .temario__title{
                     color: rgba(247, 223, 30, 1);
-                    font-size: 32px;
+                    font-size: $font32;
                     font-weight: 600;
                 }
                 .temario__list{
@@ -103,7 +103,7 @@
                     list-style-type: none;
                     .temario__item{
                         color: white;
-                        font-size: 28px;
+                        font-size: $font28;
                         font-weight: 600;
                     }
                 }
@@ -114,17 +114,17 @@
                 padding: 64px 16px;
                 h4{
                     color: rgba(247, 223, 30, 1);
-                    font-size: 26px;
+                    font-size: $font26;
                     font-weight: 600;
                 }
                 p{
                     color: white;
-                    font-size: 18px;
+                    font-size: $font18;
                     font-weight: 400;
                     line-height: 28px;
                     span{
                         font-weight: 600;
-                        font-size: 20px;
+                        font-size: $font20;
                         color: rgba(247, 223, 30, 1);
                     }
                 }
@@ -136,7 +136,7 @@
                     list-style-type: none;
                     li{
                         color: white;
-                        font-size: 18px;
+                        font-size: $font18;
                         font-weight: 400;
                     }
                 }

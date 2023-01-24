@@ -9,7 +9,7 @@
         background-color: rgb(34, 34, 34);
         padding: 64px;
         h2{
-            font-size: 42px;
+            font-size: $font42;
             color: rgba(247, 223, 30, 1);
             border-bottom: solid 4px rgba(247, 223, 30, 1);
             padding-bottom: 48px;
@@ -31,12 +31,12 @@
             background-color: rgb(34, 34, 34);
             transition: all .8s;
             .clases__title{
-                font-size: 32px;
+                font-size: $font32;
                 color: rgba(247, 223, 30, 1);
             }
             .clases__descrip{
                 @include flex(column, nowrap, space-between, stretch, 32px);
-                font-size: 20px;
+                font-size: $font20;
                 color: white;
             }
             .clases__btn{
@@ -47,7 +47,7 @@
                     background-color:  rgba(247, 223, 30, 1);
                     padding: 8px 16px;
                     color: black;
-                    font-size: 16px;
+                    font-size: $font16;
                     font-weight: 600;
                 }
             }
@@ -58,6 +58,7 @@
             }
         }
         .practicas{
+            display: none; // Quito el panel de practicas
             grid-column-start: 1;
             grid-column-end: 4;
             .clases__title{
@@ -66,11 +67,13 @@
             }
             p{
                 line-height: 42px;
-                font-size: 20px;
+                font-size: $font20;
                 color: white;
             }
         }
         .proyecto{
+            display: none; // Quito el panel del proyecto
+
             grid-column-start: 1;
             grid-column-end: 4;
             #proyecto-final{
@@ -86,7 +89,7 @@
                     }
                     p{
                         line-height: 42px;
-                        font-size: 22px;
+                        font-size: $font22;
                         color: white;
                     }
                 }
@@ -97,7 +100,7 @@
                     flex-flow: column;
                     gap: 64px;
                     h4{
-                        font-size: 32px;
+                        font-size: $font32;
                         color: white;
                     }
                     #img-proyecto{
@@ -110,6 +113,80 @@
 
         .clases:hover{
             background-color: rgb(0, 0, 0);
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    #js__main{
+        .clases1a16{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media (max-width: 992px){
+    #js__main{
+        .clases1a16{
+            grid-template-columns: 1fr;
+            grid-row-gap: 32px;
+            grid-column-gap: 16px;
+            .clases{
+                @include flex(column, nowrap, space-between, center, 32px);
+                text-align: center;
+                .clases__descrip{
+                    @include flex(column, nowrap, space-between, stretch, 32px);
+                }
+                .clases__btn{
+                    align-self: center;
+                }
+            }
+        .proyecto{
+            display: none;
+        }
+        .practicas{
+            display: none;
+        }
+        }
+
+    }
+}
+
+@media (max-width: 576px){
+    #js__main{
+        padding: 16px;
+        grid-row-gap: 32px;
+        .h2-clases{
+            padding: 32px;
+            h2{
+                font-size: 24px;
+                border-bottom: solid 3px rgba(247, 223, 30, 1);
+                padding-bottom: 24px;
+            }
+        }
+        .clases1a16{
+            grid-template-columns: 1fr;
+            .clases{
+                @include flex(column, nowrap, space-between, stretch, 0px);
+                .clases__descrip{
+                    @include flex(column, nowrap, space-between, stretch, 32px);
+                    list-style: none;
+                }
+                .clases__btn{
+                    .clases__link{
+                        font-size: $font20;
+                    }
+                }
+            }
+            .entregasAlProyectoFinal{
+                min-height: 560px;
+            }
+            .proyecto{
+                display: none;
+            }
+            .practicas{
+                display: none;
+            }
         }
     }
 }
